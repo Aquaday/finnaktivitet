@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hjemside</h1>
+      <h6>en nettside for kodekurset</h6>
+      <hr>
+
+    </header>
+    <nav>
+      <a href="/index.html">Hjem</a>
+      <a href="/om.html">Om oss</a>
+      <a href="/hobby.html">Finn en Hobby</a>
+      <a href="/arrangør.html">Arrangør Side</a>
+    </nav>
+    <main>
+      <section>
+      <h2>Publiser aktivitet</h2>
+
+      <form action="/svar.php" method="GET">
+          <label for="enkel">Hvilken aktivitet</label><br>
+          <input type="radio" id="enkel" name="aktivitet" value="Enkel aktivitet">
+          <label for="enkel">Enkel aktivitet</label>
+          <input type="radio" id="fast" name="aktivitet" value="Fast aktivitet">
+          <label for="fast">Fast aktivitet</label>
+          
+          <br><br>
+          
+          
+          <label for="navn">Navn på aktiviteten</label><br>
+          <input type="text" id="navn" name="Navn på aktiviteten">
+          
+          <br><br>
+          
+      
+          
+          <!-- Adresse input, trenger medå vise deres sted, eller velge ett annet sted -->
+          
+          <label for="dato1">Start og slutt</label> <br>
+          <input type="date" id="dato1" name="Start dato">
+          <input type="date" id="dato2" name="Slutt dato">
+          
+          <br><br>
+          
+          <label for="tidspunkt1">I tidspunktet mellom</label>
+          <input type="time" id="tidspunkt1" name="Fra tidspunkt"> og
+          <input type="time" id="tidspunkt2" name="Til tidspunkt">
+          
+          <br><br>
+          
+          <label for="forkant">Hva må gjøres i forkant</label><br>
+          <input type="checkbox" id="påmelding" name="påmelding" value="Påmelding">
+          <label for="påmelding">Påmelding</label><br>
+          <input type="checkbox" id="medlemskap" name="medlemskap" value="Medlemskap">
+          <label for="medlemskap">Medlemskap</label><br>
+          <input type="checkbox" id="forhånd" name="forhånd" value="Forhånd">
+          <label for="forhånd">Forhåndsbetaling</label>
+          
+          <br><br>
+          
+          <label for="nøkkelord">Nøkkelord</label><br>
+        <input type="text" id="nøkkelord" name="nøkkelord" style =" color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
+          
+          <br><br>
+          
+          <h3>Valgfritt</h3>
+          
+          <br><br>
+          
+          <label for="url">Link til nettside</label><br>
+          <input type="url" id="url" name="Link til nettside">
+          
+          <br><br>
+          
+          <label for="bilde">Bilde for aktiviteten</label><br>
+          <input type="file" id="bilde" name="Bilde">
+          
+          <br><br>
+          
+          <label for="lengre_info">Lengre info om aktiviteten</label><br>
+          <input type="text" id="lengre_info" size="70" name="Lengre info">
+          
+          <br><br>
+      
+          <input type="radio" id="lav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
+          <label for="lav">Lav aktivitetsnivå</label><br>
+          <input type="radio" id="middels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
+          <label for="middels">Middels aktivitetsnivå</label><br>
+          <input type="radio" id="høy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
+          <label for="høy">Høy aktivitetsnivå</label>
+          
+          <br><br>
+          
+          <input type="radio" id="gratis" name="prisklasse" value="Gratis">
+          <label for="gratis">Gratis</label><br>
+          <input type="radio" id="under200" name="prisklasse" value="Under 200kr">
+          <label for="under200">Under 200kr</label><br>
+          <input type="radio" id="under500" name="prisklasse" value="Under 500kr">
+          <label for="under500">Under 500kr</label><br>
+          <input type="radio" id="under1000" name="prisklasse" value="Under 1000kr">
+          <label for="under1000">Under 1000kr</label><br>    
+          <input type="radio" id="over1000" name="prisklasse" value="Over 1000kr">
+          <label for="over1000">Over 1000kr</label><br>    
+          
+          <br><br>
+          
+          <label for="startalder">Passer for i alder mellom</label><br>
+          <input type="text" id="startalder" name="startalder" size="5">
+          <label for="sluttalder">og</label>
+          <input type="text" id="sluttalder" name="sluttalder" size="5">
+          
+          <br><br>
+          
+          <h4>Behov for spesialutstyr?</h4>
+          <input type="radio" id="utstyr_ja" name="utstyr" value="Trenger utstyr">
+          <label for="utstyr_ja">Ja</label><br>
+          <input type="radio" id="utstyr_lån" name="utstyr" value="Kan låne utstyr">
+          <label for="utstyr_lån">Ja, men kan lånes</label><br>
+          <input type="radio" id="utstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+          <label for="utstyr_nei">Nei, trenger ikke utstyr</label>
+          <br><br>
+          <label for="infoutstyr">Hvis ja, hva utstyr trenger du</label>
+          <input type="text" id="infoutstyr" name="infoutstyr">
+          
+          <br><br>
+          
+          <label for="publiseringsdato">Når vil du publisere det?</label><br>
+          <input type="date" id="publiseringsdato" name="Publiseringsdato">
+          <input type="time" id="publiseringstidspunkt" name="Publiseringstidspunkt"><br>
+          <input type="checkbox" id="publiser_nå" name="Publiser Nå">
+          <label for="publiser_nå">Publiser nå</label>
+          
+          
+      
+          <br><br>
+          <input type="submit" value="submit">
+          
+      </form>
+      
+      </section>
+      <section>
+        <br>
+        <br>
+        <p>Ting og tang</p>
+        <br><br>
+      </section>
+      <section>
+       <br>
+       <br>
+       <p>Ting og tang nummer 2</p>
+       <br><br>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <p>nettside laget av Martin</p>
+    </footer>
+  </body>
+</html>

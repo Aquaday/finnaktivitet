@@ -1,0 +1,19 @@
+h1 { font-family:Arial, Helvetica, sans-serif}
+h2 { font-family:Arial, Helvetica, sans-serif}
+h3 { font-family:Arial, Helvetica, sans-serif}
+h4 { font-family:Arial, Helvetica, sans-serif}
+h5 { font-family:Arial, Helvetica, sans-serif}
+h6 { font-family:Arial, Helvetica, sans-serif}
+
+header {text-align: center;}
+
+.sectioncenter
+{text-align: center;}
+
+p { font-family:Arial, Helvetica, sans-serif}
+
+nav{text-align: center;width: 100%;box-align: center; font-family:Arial, Helvetica, sans-serif}
+
+footer {text-align: center;}
+
+form {text-align: center; font-family:Arial, Helvetica, sans-serif}
