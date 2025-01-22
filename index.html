@@ -8,64 +8,58 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <header class="section1">
-      <h1>Finn en aktivitet</h1>
-      <h6>en enkel søkemotor for å finne noe å gjøre</h6>
-
-
-    <nav>
-      <a href="/index.html">Hjem</a>
-      <a href="/om.html">Om oss</a>
-      <a href="/hobby.html">Finn en Hobby</a>
-      <a href="/arrangør.html">Arrangør Side</a>
-      <hr>
-    </nav>
-  </header>
+    <header>
+        <h1>Finn en aktivitet</h1>
+        <h6>en enkel søkemotor for å finne noe å gjøre</h6>
+      <nav>
+        <a href="/index.html">Hjem</a>
+        <a href="/om.html">Om oss</a>
+        <a href="/hobby.html">Finn en Hobby</a>
+        <a href="/arrangør.html">Arrangør Side</a>
+        <hr>
+      </nav>
+    </header>
     <main>
       <section class="heroSection">
-        <img class="heroImg" src="markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="sykling"> 
-        <br><br><br>
+          <img class="heroImg" src="markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="sykling"> 
+          <br><br><br>
         <div class="heroText">
           <h1>Velkommen til nettsiden</h1><br><br>
           <p>Denne skal til slutt fungere med at arrangører kan legge inn egne aktiviteter, 
             og så skal de dukke opp i resultatene under når brukere velger forskjellige filtre
           som for eksempel at det er kun innen for så og så langt vekke, og kun til de tidpunktene </p>
-
         </div>
       </section>
-      <section class="section1">
+      <section> 
+        <!-- Bruke <br> eller padding/margin for å få frirom rundt? -->
         <br>
         <br>
         <h3>Her skal du kunne søke etter ting</h3>
         <br>
         <form>
           <label for="søkefelt">søkefelt</label>
-          <br>
+            <br>
           <input type="text" id="søkefelt">
-          <br>
+            <br>
           <button type="button" style="padding:20px">Vis i kart</button>
           <button type="button" style="padding:20px">Vis i liste</button>
-          
-
         </form>
-        <br><br>
+          <br><br>
       </section>
-      <section  class="section1">
-       <br>
-       <br>
+      <section>
+        <br>
+        <br>
        <div>
-        <h3>Her kommer resultater</h3>
-
-        <iframe src="https://www.google.com/maps/d/embed?mid=1iUcA2ocwf6b4KjrvtplW3rbrRHDIN6Q&ehbc=2E312F&noprof=1" width="840" height="480" ></iframe>
-        <br><br>
-
-        <iframe src="https://www.google.com/maps/d/embed?mid=10CMXE81Tgcg9sPk274dEUX9K1FFlTqs&ehbc=2E312F&noprof=1" width="840" height="480"></iframe>
-
-      </div>
+          <h3>Her kommer resultater</h3>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1iUcA2ocwf6b4KjrvtplW3rbrRHDIN6Q&ehbc=2E312F&noprof=1" width="840" height="480" ></iframe>
+          <br><br>
+          <iframe src="https://www.google.com/maps/d/embed?mid=10CMXE81Tgcg9sPk274dEUX9K1FFlTqs&ehbc=2E312F&noprof=1" width="840" height="480"></iframe>
+          <br><br>
+        </div>
       </section>
       <!-- Eksempel over ting -->
-      <section style="padding:50px">
-        <div style="text-align:left;border-style:solid;padding:15px" style="border-style:solid;">
+      <section class="aktivitetSection" >
+        <div class="aktivitetTextLeft">
          <h2 id="FontenehusetTurgruppe">Fontenehuset Turgruppe</h2>
          <h6>Arrangeres av <a href="/om.html">Fontenehuset Bergen</a><br>Skutevikensboder 11, 5035 Bergen</h6>
          <h5>Hver torsdag kl 09:00-15:00</h5>
@@ -74,15 +68,13 @@
          <h5>Nøkkelord: <ins>Turgruppe</ins> - <ins>Fontenehuset</ins> - <ins>Bergen</ins> - <ins>PsykiskHelse</ins></h5>
 
         </div>
-        <div style="text-align:right">
+        <div class="aktivitetTextRight">
           <h5>Velkommen til turgruppe hver torsdag hos fontenehuset!<br> Alle som har meldt seg inn kan delta, og det er ikke behov for å ta med seg noe mer enn gode klær og sko. <br>Resten av utstyret kan du låne hos oss :) <br><br>
           Innmelding er gratis, og du kan lese mer om vårt tilbud her: <ins>www.fontenehusetbergen.com/bli-medlem/</ins></h5>
-          
         </div>
       </section>
-      <section  class="section1">
+      <section>
         <br>
-        
         <br>
         <h3>Hvorfor dette kan være noe lurt</h3> 
         <ul>
@@ -96,7 +88,7 @@
     <footer>
       <hr>
       <p>nettside laget av Martin <br>
-        <a href="https://github.com/Aquaday">https://github.com/Aquaday</a>
+      <a href="https://github.com/Aquaday">https://github.com/Aquaday</a>
       </p>
     </footer>
   </body>
