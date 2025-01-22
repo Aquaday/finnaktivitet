@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -30,30 +33,32 @@
           
         </div>
       </section>
-      <section style="margin:auto;width: 50%;"> 
+      <section class="sectionStyle1"> 
         <!-- Bruke <br> eller padding/margin for å få frirom rundt? -->
         <br>
-        <h1>Hvordan skal det fungere?</h1>
-        <ol style="list-style-type: circle;text-align: left;">
+        <div style="margin:auto;width: 50%;">
+         <h1>Hvordan skal det fungere?</h1>
+          <ol style="list-style-type: circle;text-align: left;">
           <li> Arrangører legger inn sine aktiviteter på siden <a href="/arrangør.html">Arrangør Side</a></li>
           <li> Informasjonen lagres i en database for nettsiden</li>
           <li> Brukere søker etter det de ønsker, der de kan velge for eksempel tidsrom, avstand, alder, aktivitetsnivå, og prisklasse</li>
           <li> Resultatene dukker opp enten på kart, eller som en lengre liste </li>
           <li> Brukere kan da trykke innpå og finne all informasjonen, sammen med all informasjonen om arrangører og nettside og diverse</li>
           <li> Arrangører kan også gå inn og endre på informasjonen etter den er publisert, og de skal få opp ett forslag til hvordan de kan poste det på sosiale medier</li>
-        </ol>
-        <br>
-        <h3>Her skal du kunne søke etter ting</h3>
-        <br>
-        <form>
-          <label for="søkefelt">søkefelt</label>
-            <br>
-          <input type="text" id="søkefelt">
-            <br>
-          <button type="button" style="padding:20px">Vis i kart</button>
-          <button type="button" style="padding:20px">Vis i liste</button>
-        </form>
+          </ol>
+         <br>
+         <h3>Her skal du kunne søke etter ting</h3>
+          <br>
+          <form>
+           <label for="søkefelt">søkefelt</label>
+             <br>
+           <input type="text" id="søkefelt">
+              <br>
+            <button type="button" style="padding:20px">Vis i kart</button>
+            <button type="button" style="padding:20px">Vis i liste</button>
+         </form>
           <br><br>
+        </div>
       </section>
       <section>
         <br>

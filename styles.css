@@ -13,14 +13,24 @@ nav {
     padding-bottom: 20px;
 }
 
+hr{
+    margin-bottom: 0px;
+}
+
 .pageTitle {
     padding-top: 0px;
     padding-bottom: 0px;
+    font-family: "Nokora", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
     padding-bottom: 30px;
     padding-top: 30px;
+    font-family: "Nokora", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .heroSection {
@@ -61,6 +71,10 @@ h1 {
     margin: auto;
 }
 
+.sectionStyle1 {
+    background-color: lightblue;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -75,3 +89,33 @@ footer {
     padding-top: 75px;
     padding-bottom: 100px;
 }
+
+.nokora-thin {
+    font-family: "Nokora", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .nokora-light {
+    font-family: "Nokora", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .nokora-regular {
+    font-family: "Nokora", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nokora-bold {
+    font-family: "Nokora", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .nokora-black {
+    font-family: "Nokora", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
