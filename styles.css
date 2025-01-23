@@ -88,6 +88,9 @@ form {
     text-align: left;
 }
 
+.formHeader { 
+    font-weight: bold;
+}
 
 input {
     margin-bottom: 20px;
