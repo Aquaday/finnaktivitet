@@ -82,6 +82,17 @@ ul {
     padding: 0;
 }
 
+form {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+}
+
+
+input {
+    margin-bottom: 20px;
+}
+
 footer {
     padding-top: 50px;
 }
