@@ -59,21 +59,28 @@ h1 {
 }
 
 .aktivitetTextLeft {
-    padding: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     width: 50%;
     text-align:left;
-    margin: auto;
+
 }
 
 .aktivitetTextRight {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 50%;
     text-align:right;
-    margin: auto;
+
 }
 
 .sectionStyle1 {
     background-color: lightblue;
+}
+
+.sectionStyle2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 ul {
