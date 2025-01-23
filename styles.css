@@ -27,7 +27,6 @@ hr{
 
 h1 {
     padding-bottom: 30px;
-    padding-top: 30px;
     font-family: "Nokora", serif;
     font-weight: 700;
     font-style: normal;
@@ -54,28 +53,30 @@ h1 {
     border-style:solid;
     border-radius: 30px;
     display: flex;
-    width: 50%;
+    width: 70%;
     margin:auto;
 }
 
 .aktivitetTextLeft {
     padding-right: 50px;
     padding-left: 50px;
-    width: 50%;
+    width: 35%;
     text-align:left;
-
+    margin: auto;
+    border-right-style: dotted;
 }
 
 .aktivitetTextRight {
     padding-left: 50px;
     padding-right: 50px;
-    width: 50%;
-    text-align:right;
-
+    width: 65%;
+    text-align:center;
+    margin: auto;
 }
 
 .sectionStyle1 {
     background-color: lightblue;
+    padding-bottom: 50px;
 }
 
 .sectionStyle2 {

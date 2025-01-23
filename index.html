@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-        <h1 class="pageTitle">Finn en aktivitet</h1>
+        <h1 class="pageTitle" id="header">Finn en aktivitet</h1>
       <nav>
         <a href="/index.html">Hjem</a>
         <a href="/om.html">Om oss</a>
@@ -24,18 +24,17 @@
     <main>
       <section class="heroSection">
           <img class="heroImg" src="markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="sykling"> 
-        <div class="heroText" style="padding: 50px;">
+        <div class="heroText">
           <h1>Velkommen til nettsiden</h1>
           <p>Dette er en nettside som skal gjøre det raskt og enkelt for brukere å finne aktiviteter som passer for de, og som skal gjøre det enklere for arrangører å reklamere for aktivitetene uten at de må betale for det</p>
           <p>Ting som kan være på siden er for eksempel åpningstider til ett klubbhus/frivilligsentral/idrettshaller, 
             enkel aktivitet som en fellestur opp ulrikken, en festival, en konsert eller ett norgesmesterskap, 
             og det kan være for idretter som viser treningstider, store arrangmeneter, og muligheter til å prøve idretten</p>
-          
         </div>
       </section>
       <section class="sectionStyle1"> 
         <!-- Bruke <br> eller padding/margin for å få frirom rundt? -->
-        <div style="margin:auto;width: 50%;">
+        <div style="margin:auto;width: 50%;padding-top: 20px;">
          <h1>Hvordan skal det fungere?</h1>
           <ol style="list-style-type: circle;text-align: left;">
           <li> Arrangører legger inn sine aktiviteter på siden <a href="/arrangør.html">Arrangør Side</a></li>
@@ -45,25 +44,27 @@
           <li> Brukere kan da trykke innpå og finne all informasjonen, sammen med all informasjonen om arrangører og nettside og diverse</li>
           <li> Arrangører kan også gå inn og endre på informasjonen etter den er publisert, og de skal få opp ett forslag til hvordan de kan poste det på sosiale medier</li>
           </ol>
-         <h3>Her skal du kunne søke etter ting</h3>
-          <form style="text-align: center;">
-           <label for="søkefelt">søkefelt</label>
-           <input type="text" id="søkefelt">
-            <button type="button" style="padding:20px">Vis i kart</button>
-            <button type="button" style="padding:20px">Vis i liste</button><br><br>
-         </form>
         </div>
+      </section>
+      <section>
+        <h3 style="padding-top: 50px;">Her skal du kunne søke etter ting</h3>
+        <form style="text-align: center;">
+         <label for="søkefelt">søkefelt</label>
+         <input type="text" id="søkefelt">
+          <a href="#kart"><button type="button" style="padding:20px">Vis i kart</button></a>
+          <a href="#infoboks"><button type="button" style="padding:20px">Vis i liste</button></a><br><br>
+        </form>
       </section>
       <section class="sectionStyle2">
        <div>
-          <h3>Her kommer resultater</h3>
+          <h3 id="kart">Her kommer resultater</h3>
           <iframe src="https://www.google.com/maps/d/embed?mid=1iUcA2ocwf6b4KjrvtplW3rbrRHDIN6Q&ehbc=2E312F&noprof=1" width="840" height="480" ></iframe>
           <iframe src="https://www.google.com/maps/d/embed?mid=10CMXE81Tgcg9sPk274dEUX9K1FFlTqs&ehbc=2E312F&noprof=1" width="840" height="480"></iframe>
         </div>
       </section>
       <!-- Eksempel over ting -->
       <section>
-        <h1>Infoboks om aktivitetene fra resultatene</h1>
+        <h1 id="infoboks">Infoboks om aktivitetene fra resultatene</h1>
       </section>
       <section class="aktivitetSection">
         <div class="aktivitetTextLeft">
@@ -78,6 +79,9 @@
           <h5>Velkommen til turgruppe hver torsdag hos fontenehuset!<br> Alle som har meldt seg inn kan delta, og det er ikke behov for å ta med seg noe mer enn gode klær og sko. <br>Resten av utstyret kan du låne hos oss :) <br><br>
           Innmelding er gratis, og du kan lese mer om vårt tilbud her: <ins>www.fontenehusetbergen.com/bli-medlem/</ins></h5>
         </div>
+      </section>
+      <section style="padding: 20px;">
+        <a href="#header"><button type="button" style="padding:20px">Til toppen</button></a>
       </section>
     </main>
     <footer>
