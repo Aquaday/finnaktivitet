@@ -14,10 +14,10 @@
     <header>
         <h1 class="pageTitle" id="header">Finn en aktivitet</h1>
       <nav>
-        <a href="/index.html">Hjem</a>
-        <a href="/om.html">Om oss</a>
-        <a href="/hobby.html">Finn en Hobby</a>
-        <a href="/arrangør.html">Arrangør Side</a>
+        <a href="/index.html"><button type="button"><p class="buttonText">Hjem<p></button></a>
+        <a href="/om.html"><button type="button"><p class="buttonText">Om oss<p></button></a>
+        <a href="/hobby.html"><button type="button"><p class="buttonText">Finn en hobby<p></button></a>
+        <a href="/arrangør.html"><button type="button"><p class="buttonText">Arrangørside<p></button></a>
       </nav>
       <hr>
     </header>
@@ -47,17 +47,82 @@
         </div>
       </section>
       <section>
-        <h3 style="padding-top: 50px;">Her skal du kunne søke etter ting</h3>
-        <form style="text-align: center;">
-         <label for="søkefelt">søkefelt</label><br>
-         <input type="text" id="søkefelt"><br>
-          <a href="#kart"><button type="button" style="padding:20px">Vis i kart</button></a>
-          <a href="#infoboks"><button type="button" style="padding:20px">Vis i liste</button></a><br><br>
-        </form>
+        <h1 style="padding-top: 50px;">Hvilken aktivitet ser du etter?</h1>
+      </section>
+      <section class="søkSection">
+        <div class="søkTextLeft">
+          <label for="søkenkel" class="formHeader">Hvilken aktivitet</label><br>
+          <br><input type="radio" id="søkenkel" name="aktivitet" value="Enkel aktivitet">
+          <label for="søkenkel">Enkel aktivitet</label>
+          <input type="radio" id="søkfast" name="aktivitet" value="Fast aktivitet">
+          <label for="søkfast">Fast aktivitet</label><br><br>
+          <label for="søkdato1" class="formHeader">Start og slutt</label> <br><br>
+          <input type="date" id="søkdato1" name="Start dato">
+          <input type="date" id="søkdato2" name="Slutt dato"><br>
+          <label for="søktidspunkt1">I tidspunktet mellom</label><br>
+          <input type="time" id="søktidspunkt1" name="Fra tidspunkt"> og
+          <input type="time" id="søktidspunkt2" name="Til tidspunkt"><br>
+        </div>
+        <div class="søkTextRight">
+          <label class="formHeader">Hva må gjøres i forkant</label><br><br>
+          <input type="checkbox" id="søkpåmelding" name="påmelding" value="Påmelding">
+          <label for="søkpåmelding">Påmelding</label><br>
+          <input type="checkbox" id="søkmedlemskap" name="medlemskap" value="Medlemskap">
+          <label for="søkmedlemskap">Medlemskap</label><br>
+          <input type="checkbox" id="søkforhånd" name="forhånd" value="Forhånd">
+          <label for="søkforhånd">Forhåndsbetaling</label><br><br>
+          <label for="søknøkkelord" class="formHeader">Nøkkelord</label><br><br>
+          <input type="text" id="søknøkkelord" name="søknøkkelord" style ="color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
+        </div>
+        </section>
+        <section>
+          <h2>Valgfritt</h2>
+        </section>
+        <section class="søkSection">
+          <div class="søkTextLeft">
+          <label for="søklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
+          <input type="radio" id="søklav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
+          <label for="søklav">Passer for Alle</label><br>
+          <input type="radio" id="søkmiddels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
+          <label for="søkmiddels">Lettere fysisk kverende</label><br>
+          <input type="radio" id="søkhøy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
+          <label for="søkhøy">Veldig fysisk krevende</label><br><br>
+          <label for="søkgratis" class="formHeader">Hva er prisklassen?</label><br><br>
+          <input type="radio" id="søkgratis" name="prisklasse" value="Gratis">
+          <label for="søkgratis">Gratis</label><br>
+          <input type="radio" id="søkunder200" name="prisklasse" value="Under 200kr">
+          <label for="søkunder200">Under 200kr</label><br>
+          <input type="radio" id="søkunder500" name="prisklasse" value="Under 500kr">
+          <label for="søkunder500">Under 500kr</label><br>
+          <input type="radio" id="søkunder1000" name="prisklasse" value="Under 1000kr">
+          <label for="søkunder1000">Under 1000kr</label><br>    
+          <input type="radio" id="søkover1000" name="prisklasse" value="Over 1000kr">
+          <label for="søkover1000">Over 1000kr</label><br>  <br>
+          </div>  
+          <div class="søkTextRight">
+          <label for="søkstartalder" class="formHeader">Passer for i alder mellom</label><br><br>
+          <input type="text" id="søkstartalder" name="startalder" size="5">
+          <label for="søksluttalder">og</label>
+          <input type="text" id="søksluttalder" name="sluttalder" size="5"><br><br>
+          <label for="søkutstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br><br>
+          <input type="radio" id="søkutstyr_ja" name="utstyr" value="Trenger utstyr">
+          <label for="søkutstyr_ja">Ja</label><br>
+          <input type="radio" id="søkutstyr_lån" name="utstyr" value="Kan låne utstyr">
+          <label for="søkutstyr_lån">Ja, men kan lånes</label><br>
+          <input type="radio" id="søkutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+          <label for="søkutstyr_nei">Nei, trenger ikke utstyr</label>
+          </div>
+        </section>
+        <section>
+
+          <a href="#kart"><button type="button" >Vis i kart</button></a>
+          <a href="#infoboks"><button type="button" >Vis i liste</button></a><br><br>
+        
+
       </section>
       <section class="sectionStyle2">
        <div>
-          <h3 id="kart">Her kommer resultater</h3>
+          <h1 id="kart">Her kommer resultater</h1>
           <iframe src="https://www.google.com/maps/d/embed?mid=1iUcA2ocwf6b4KjrvtplW3rbrRHDIN6Q&ehbc=2E312F&noprof=1" width="840" height="480" ></iframe>
           <iframe src="https://www.google.com/maps/d/embed?mid=10CMXE81Tgcg9sPk274dEUX9K1FFlTqs&ehbc=2E312F&noprof=1" width="840" height="480"></iframe>
         </div>

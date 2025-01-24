@@ -1,8 +1,28 @@
+.noto-sans {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  .noto-sans-bold {
+      font-family: "Noto Sans", serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+  }
+
 body {
     text-align: center;
-    font-family: "Nokora", serif;
-    font-weight: 400;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
     margin: 0;
 }
 
@@ -14,6 +34,22 @@ nav {
     width: 100%;
     box-align: center;
     padding-bottom: 20px;
+}
+
+button {
+    border-radius: 20px;
+    cursor: pointer;
+    border-color: green;
+    background-color: lightblue;
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+}
+
+.buttonText {
+    font-size: 125%;
+    font-weight: 500;
 }
 
 hr {
@@ -36,6 +72,7 @@ h1 {
     font-family: "Nokora", serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 300%;
 }
 
 .heroSection {
@@ -82,6 +119,35 @@ h1 {
     margin: auto;
 }
 
+.søkSection {
+    padding: 15px;
+    display: flex;
+    width: 50%;
+    margin:auto;
+}
+
+.søkTextLeft {
+    font-size: 125%;
+    width: 50%;
+    text-align: left;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 20px;
+}
+
+.søkTextRight {
+    width: 50%;
+    text-align: right;
+    font-size: 125%;
+    border-left-style:solid;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 20px;
+}
+
 .sectionStyle1 {
     background-color: lightblue;
     padding-bottom: 50px;
@@ -100,9 +166,8 @@ ul {
 
 form {
     margin: auto;
-    width: 50%;
-    text-align: left;
 }
+
 
 .formHeader { 
     font-weight: bold;
