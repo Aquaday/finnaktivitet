@@ -6,14 +6,15 @@
     font-variation-settings:
       "wdth" 100;
   }
-  .noto-sans-bold {
-      font-family: "Noto Sans", serif;
-      font-optical-sizing: auto;
-      font-weight: 900;
-      font-style: normal;
-      font-variation-settings:
-        "wdth" 100;
-  }
+
+.noto-sans-bold {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
 
 body {
     text-align: center;
@@ -21,8 +22,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings:"wdth" 100;
     margin: 0;
 }
 
@@ -82,7 +82,6 @@ h1 {
 .heroImg {
     width: 50%;
     margin: auto;
-
 }
 
 .heroText { 
@@ -118,17 +117,39 @@ h1 {
     margin: auto;
 }
 
+form {
+    margin: auto;
+}
+
+.formHeader { 
+    font-weight: bold;
+}
+
 .søkSection {
     background-color:rgb(119, 255, 146)
 }
 
-.søkSection input {
-    width: 90%;
-}
 
-.søkSection input[type="radio"] {
-    width: 10%;
-}
+.søkSection input[type="text"] {
+    width: 20%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.søkSection input[name="søknøkkelord"] {
+    width: 90%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.søkSection input[type="date"] {
+    width: 45%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
 
 .søkDiv {
     display: flex;
@@ -144,7 +165,6 @@ h1 {
 .søkTextLeft {
     font-size: 125%;
     width: 50%;
-    text-align: left;
     border-right-style: solid;
     border-right-width: 1px;
     border-bottom-style: solid;
@@ -154,7 +174,6 @@ h1 {
 
 .søkTextRight {
     width: 50%;
-    text-align: right;
     font-size: 125%;
     border-left-style:solid;
     border-left-width: 1px;
@@ -173,30 +192,15 @@ h1 {
     padding-bottom: 50px;
 }
 
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-form {
-    margin: auto;
-}
-
-
-.formHeader { 
-    font-weight: bold;
-}
-
-input {
-    margin-bottom: 20px;
-}
-
 footer {
     padding-top: 50px;
 }
-
 
 .footerText {
     padding-top: 25px;
