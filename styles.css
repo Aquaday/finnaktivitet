@@ -68,7 +68,6 @@ hr {
 }
 
 h1 {
-    padding-bottom: 30px;
     font-family: "Nokora", serif;
     font-weight: 700;
     font-style: normal;
@@ -120,10 +119,26 @@ h1 {
 }
 
 .søkSection {
-    padding: 15px;
+    background-color:rgb(119, 255, 146)
+}
+
+.søkSection input {
+    width: 90%;
+}
+
+.søkSection input[type="radio"] {
+    width: 10%;
+}
+
+.søkDiv {
     display: flex;
     width: 50%;
     margin:auto;
+}
+
+.søkHeader {
+    background-image: linear-gradient(lightblue, rgb(119, 255, 146));
+    padding: 50px 0px 50px 0px;
 }
 
 .søkTextLeft {
@@ -148,15 +163,16 @@ h1 {
     padding-bottom: 20px;
 }
 
+.søkEnd {
+    background-image: linear-gradient(rgb(119, 255, 146),white);
+    padding: 20px 0px 20px 0px;
+}
+
 .sectionStyle1 {
     background-color: lightblue;
     padding-bottom: 50px;
 }
 
-.sectionStyle2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 ul {
     list-style-type: none;
@@ -185,34 +201,4 @@ footer {
 .footerText {
     padding-top: 25px;
     padding-bottom: 50px;
-}
-
-/* <uniquifier>: Use a unique and descriptive class name
-    <weight>: Use a value from 100 to 900
-
-.noto-sans-<uniquifier> {
-  font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-*/
-
-.noto-sans {
-  font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-.noto-sans-bold {
-    font-family: "Noto Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
 }
