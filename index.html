@@ -33,7 +33,7 @@
         </div>
       </section>
       <section class="sectionStyle1"> 
-        <div style="margin:auto;width: 50%;padding-top: 20px;">
+        <div>
          <h1>Hvordan skal det fungere?</h1>
           <ol style="list-style-type: circle;text-align: left;margin-bottom: 0px;">
           <li> Arrangører legger inn sine aktiviteter på siden <a href="/arrangør.html">Arrangør Side</a></li>
@@ -47,16 +47,18 @@
 
       </section>
       <section class="søkHeader">
-        <h1 style="margin-top: 0px;margin-bottom: 0px;">Hvilken aktivitet ser du etter?</h1>
+        <h1>Hvilken aktivitet ser du etter?</h1>
       </section>
       <section class="søkSection">
         <div class="søkDiv">
           <div class="søkTextLeft">
             <label for="søkenkel" class="formHeader">Hvilken aktivitet</label><br>
             <br><input type="radio" id="søkenkel" name="aktivitet" value="Enkel aktivitet">
-            <label for="søkenkel">Enkel aktivitet</label><br>
+            <label for="søkenkel"><b>Enkel aktivitet</b><br>noe som skjer kun en dag eller over en liten periode</label><br><br>
             <input type="radio" id="søkfast" name="aktivitet" value="Fast aktivitet">
-            <label for="søkfast">Fast aktivitet</label><br><br>
+            <label for="søkfast"><b>Fast aktivitet</b><br>en aktivitet som skjer regelmessig hver uke</label><br><br>
+          </div>
+          <div class="søkTextRight">
             <label for="søkdato1" class="formHeader">Start og slutt</label> <br><br>
             <input type="date" id="søkdato1" name="Start dato">
             <input type="date" id="søkdato2" name="Slutt dato"><br>
@@ -64,56 +66,76 @@
             <input type="time" id="søktidspunkt1" name="Fra tidspunkt"> og
             <input type="time" id="søktidspunkt2" name="Til tidspunkt"><br>
           </div>
-          <div class="søkTextRight">
-          <label class="formHeader">Hva må gjøres i forkant</label><br><br>
-          <input type="checkbox" id="søkpåmelding" name="påmelding" value="Påmelding">
-          <label for="søkpåmelding">Påmelding</label><br>
-          <input type="checkbox" id="søkmedlemskap" name="medlemskap" value="Medlemskap">
-          <label for="søkmedlemskap">Medlemskap</label><br>
-          <input type="checkbox" id="søkforhånd" name="forhånd" value="Forhånd">
-          <label for="søkforhånd">Forhåndsbetaling</label><br><br>
-          <label for="søknøkkelord" class="formHeader">Nøkkelord</label><br><br>
-          <input type="text" id="søknøkkelord" name="søknøkkelord" style ="color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
-          </div> 
         </div>
+      </section>
+      <section class="søkSection">
+        <div class="søkDiv">
+          <div class="søkTextLeft">
+            <label class="formHeader">Fjern resultater der man må:</label><br><br>
+            <input type="checkbox" id="søkpåmelding" name="påmelding" value="Påmelding">
+            <label for="søkpåmelding">Melde seg på</label><br>
+            <input type="checkbox" id="søkmedlemskap" name="medlemskap" value="Medlemskap">
+            <label for="søkmedlemskap">Registrere medlemskap</label><br>
+            <input type="checkbox" id="søkforhånd" name="forhånd" value="Forhånd">
+            <label for="søkforhånd">Forhåndsbetale billetter eller lignende</label><br><br>
+          </div>
+          <div class="søkTextRight">
+            <label for="søknøkkelord" class="formHeader">Nøkkelord</label><br><br>
+            <label for="søknøkkelord">For eksempel en type idrett, en organisasjon eller sted</label>
+            <input type="text" id="søknøkkelord" name="søknøkkelord" 
+                  style ="color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett"><br>
+          </div> 
+        </div> 
         </section>
         <section style="background-color:rgb(119, 255, 146);padding: 50px 0px 50px 0px;">
-          <h2>Valgfritt</h2>
+          <h2 style="font-weight: 300; font-size: 150%;">Valgfritt</h2>
         </section>
         <section class="søkSection">
           <div class="søkDiv">
             <div class="søkTextLeft">
-            <label for="søklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
-            <input type="radio" id="søklav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
-            <label for="søklav">Passer for Alle</label><br>
-            <input type="radio" id="søkmiddels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
-            <label for="søkmiddels">Lettere fysisk kverende</label><br>
-            <input type="radio" id="søkhøy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
-            <label for="søkhøy">Veldig fysisk krevende</label><br><br>
-            <label for="søkgratis" class="formHeader">Hva er prisklassen?</label><br><br>
-            <input type="radio" id="søkgratis" name="prisklasse" value="Gratis">
-            <label for="søkgratis">Gratis</label><br>
-            <input type="radio" id="søkunder200" name="prisklasse" value="Under 200kr">
-            <label for="søkunder200">Under 200kr</label><br>
-            <input type="radio" id="søkunder500" name="prisklasse" value="Under 500kr">
-            <label for="søkunder500">Under 500kr</label><br>
-            <input type="radio" id="søkunder1000" name="prisklasse" value="Under 1000kr">
-            <label for="søkunder1000">Under 1000kr</label><br>    
-            <input type="radio" id="søkover1000" name="prisklasse" value="Over 1000kr">
-            <label for="søkover1000">Over 1000kr</label><br>  <br>
-            </div>  
+              <label for="søkalder" class="formHeader">Alder</label><br><br>
+              <input type="text" id="søkalder" name="alder" size="15"><br>
+              <input type="checkbox" id="søkaltalder" name="alder" value="Alle alder">
+              <label for="søkaltalder">Vis alt</label><br>
+            </div>
             <div class="søkTextRight">
-            <label for="søkstartalder" class="formHeader">Passer for i alder mellom</label><br><br>
-            <input type="text" id="søkstartalder" name="startalder" size="5">
-            <label for="søksluttalder">og</label>
-            <input type="text" id="søksluttalder" name="sluttalder" size="5"><br><br>
-            <label for="søkutstyr_ja" class="formHeader">Behov for aktivitetsrelatert utstyr?</label><br><br>
-            <input type="radio" id="søkutstyr_ja" name="utstyr" value="Trenger utstyr">
-            <label for="søkutstyr_ja">Ja</label><br>
-            <input type="radio" id="søkutstyr_lån" name="utstyr" value="Kan låne utstyr">
-            <label for="søkutstyr_lån">Ja, men kan lånes</label><br>
-            <input type="radio" id="søkutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
-            <label for="søkutstyr_nei">Nei, trenger ikke utstyr</label>
+              <label for="søklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
+              <input type="radio" id="søkalt" name="aktivitetsnivå" value="Alle aktivitetesnivå">
+              <label for="søkalt">Vis alt</label><br>
+              <input type="radio" id="søklav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
+              <label for="søklav">Passer for Alle</label><br>
+              <input type="radio" id="søkmiddels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
+              <label for="søkmiddels">Lettere fysisk kverende</label><br>
+              <input type="radio" id="søkhøy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
+              <label for="søkhøy">Veldig fysisk krevende</label><br><br>
+            </div>  
+          </div>  
+          <div class="søkDiv">
+            <div class="søkTextLeft">
+              <label for="søkgratis" class="formHeader">Hva er prisklassen?</label><br><br>
+              <input type="radio" id="søkvisalt" name="prisklasse" value="Vis alt">
+              <label for="søkvisalt">Vis alt</label><br>
+              <input type="radio" id="søkgratis" name="prisklasse" value="Gratis">
+              <label for="søkgratis">Gratis</label><br>
+              <input type="radio" id="søkunder200" name="prisklasse" value="Under 200kr">
+              <label for="søkunder200">Under 200kr</label><br>
+              <input type="radio" id="søkunder500" name="prisklasse" value="Under 500kr">
+              <label for="søkunder500">Under 500kr</label><br>
+              <input type="radio" id="søkunder1000" name="prisklasse" value="Under 1000kr">
+              <label for="søkunder1000">Under 1000kr</label><br>    
+              <input type="radio" id="søkover1000" name="prisklasse" value="Over 1000kr">
+              <label for="søkover1000">Over 1000kr</label><br>  <br>
+            </div>
+            <div class="søkTextRight">
+              <label for="søkutstyr_ja" class="formHeader">Behov for aktivitetsrelatert utstyr?</label><br><br>
+              <input type="radio" id="søkutstyr_alt" name="utstyr" value="Vis alt">
+              <label for="søkutstyr_alt">Vis alt</label><br>
+              <input type="radio" id="søkutstyr_ja" name="utstyr" value="Trenger utstyr">
+              <label for="søkutstyr_ja">Ja</label><br>
+              <input type="radio" id="søkutstyr_lån" name="utstyr" value="Kan låne utstyr">
+              <label for="søkutstyr_lån">Ja, men kan lånes</label><br>
+              <input type="radio" id="søkutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+              <label for="søkutstyr_nei">Nei, trenger ikke utstyr</label>
             </div>
           </div>
         </section>

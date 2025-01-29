@@ -122,11 +122,14 @@ form {
 }
 
 .formHeader { 
-    font-weight: bold;
+    font-weight:400;
+    font-size:150%;
+
 }
 
 .søkSection {
-    background-color:rgb(119, 255, 146)
+    background-color:rgb(119, 255, 146);
+
 }
 
 
@@ -154,7 +157,7 @@ form {
 .søkDiv {
     display: flex;
     width: 50%;
-    margin:auto;
+    margin: auto;
 }
 
 .søkHeader {
@@ -165,21 +168,25 @@ form {
 .søkTextLeft {
     font-size: 125%;
     width: 50%;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    padding-bottom: 20px;
+    margin: auto;
+    min-height: 250px;
+    border: 2px gray solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .søkTextRight {
     width: 50%;
     font-size: 125%;
-    border-left-style:solid;
-    border-left-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    padding-bottom: 20px;
+    margin: center;
+    min-height: 250px;
+    border: 2px gray solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .søkEnd {
