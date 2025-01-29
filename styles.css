@@ -156,8 +156,11 @@ form {
 
 .søkDiv {
     display: flex;
-    width: 50%;
-    margin: auto;
+    justify-content: center;
+    min-width: 50%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .søkHeader {
@@ -168,11 +171,11 @@ form {
 .søkTextLeft {
     font-size: 125%;
     width: 50%;
-    margin: auto;
     min-height: 250px;
+    min-width: 250px;
     border: 2px gray solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-top: 30px;
+    padding:10px 10px 10px 10px;
     margin-right: 10px;
     margin-bottom: 20px;
 }
@@ -180,11 +183,11 @@ form {
 .søkTextRight {
     width: 50%;
     font-size: 125%;
-    margin: center;
     min-height: 250px;
+    min-width: 250px;
     border: 2px gray solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-top: 30px;
+    padding:10px 10px 10px 10px;
     margin-left: 10px;
     margin-bottom: 20px;
 }
@@ -192,6 +195,8 @@ form {
 .søkEnd {
     background-image: linear-gradient(rgb(119, 255, 146),white);
     padding: 20px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sectionStyle1 {
