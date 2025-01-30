@@ -25,6 +25,7 @@ body {
     font-variation-settings:"wdth" 100;
     margin: 0;
     color: rgb(22, 22, 22);
+    max-width: 100%;
 }
 
 header {
@@ -84,16 +85,18 @@ h1 {
 
 .heroSection {
     display: flex;
+    justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .heroImg {
-    width: 50%;
+    min-width:50%;
     margin: auto;
 }
 
 .heroText { 
-    width: 50%;
+    min-width: 50%;
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
