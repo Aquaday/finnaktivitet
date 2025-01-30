@@ -125,10 +125,6 @@ h1 {
     margin: auto;
 }
 
-form {
-    margin: auto;
-}
-
 .formHeader { 
     font-weight:400;
     font-size:150%;
@@ -137,7 +133,7 @@ form {
 
 .søkSection {
     background-color:rgb(119, 255, 146);
-
+    justify-content: center;
 }
 
 
@@ -163,12 +159,12 @@ form {
   }
 
 .søkDiv {
-    display: flex;
-    justify-content: center;
     min-width: 50%;
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .søkHeader {
@@ -176,29 +172,16 @@ form {
     padding: 50px 0px 50px 0px;
 }
 
-.søkTextLeft {
+.søkText {
     font-size: 125%;
-    width: 50%;
-    min-height: 250px;
-    min-width: 150px;
+    width: 350px;
+    height: 250px;
     border: 2px gray solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding:10px 10px 10px 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    padding:10px;
+    margin: 10px;
 }
 
-.søkTextRight {
-    width: 50%;
-    font-size: 125%;
-    min-height: 250px;
-    min-width: 150px;
-    border: 2px gray solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding:10px 10px 10px 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
 
 .søkEnd {
     background-image: linear-gradient(rgb(119, 255, 146),white);
@@ -211,6 +194,20 @@ form {
     background-color: lightblue;
     padding: 30px 100px 50px 100px;
     justify-content: center;
+}
+
+.publiserSection
+
+.publiserDiv {
+    min-width: 50%;
+    max-width: 80%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.publiserDiv input {
+    margin-left: 30px;
 }
 
 ul {

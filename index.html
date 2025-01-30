@@ -11,29 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <h1 class="pageTitle" id="header">Finn en aktivitet</h1>
-    </header>
-    <nav>
-      <ul>
-        <a href="/index.html"><button type="button" class="activeNav"><p class="buttonText">Hjem<p></button></a>
-        <a href="/om.html"><button type="button"><p class="buttonText">Om oss<p></button></a>
-        <a href="/hobby.html"><button type="button"><p class="buttonText">Finn en hobby<p></button></a>
-        <a href="/arrangør.html"><button type="button"><p class="buttonText">Arrangørside<p></button></a>
-      </ul>
-      <hr>
-    </nav>
     <main>
       <section class="heroSection">
           <img class="heroImg" src="markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="sykling"> 
         <div class="heroText">
-          <h1>Velkommen til nettsiden</h1>
+          <h1>Finn en aktivitet</h1>
           <p>Dette er en nettside som skal gjøre det raskt og enkelt for brukere å finne aktiviteter som passer for de, og som skal gjøre det enklere for arrangører å reklamere for aktivitetene uten at de må betale for det</p>
           <p>Ting som kan være på siden er for eksempel åpningstider til ett klubbhus/frivilligsentral/idrettshaller, 
             enkel aktivitet som en fellestur opp ulrikken, en festival, en konsert eller ett norgesmesterskap, 
             og det kan være for idretter som viser treningstider, store arrangmeneter, og muligheter til å prøve idretten</p>
         </div>
       </section>
+        <nav>
+          <ul>
+            <a href="/index.html"><button type="button" class="activeNav"><p class="buttonText">Hjem<p></button></a>
+            <a href="/om.html"><button type="button"><p class="buttonText">Om oss<p></button></a>
+            <a href="/hobby.html"><button type="button"><p class="buttonText">Finn en hobby<p></button></a>
+            <a href="/arrangør.html"><button type="button"><p class="buttonText">Arrangørside<p></button></a>
+          </ul>
+          <hr>
+        </nav>
       <section class="sectionStyle1"> 
         <div>
          <h1>Hvordan skal det fungere?</h1>
@@ -53,14 +50,14 @@
       </section>
       <section class="søkSection">
         <div class="søkDiv">
-          <div class="søkTextLeft">
+          <div class="søkText">
             <label for="søkenkel" class="formHeader">Hvilken aktivitet</label><br>
             <br><input type="radio" id="søkenkel" name="aktivitet" value="Enkel aktivitet">
             <label for="søkenkel"><b>Enkel aktivitet</b><br>noe som skjer kun en dag eller over en liten periode</label><br><br>
             <input type="radio" id="søkfast" name="aktivitet" value="Fast aktivitet">
             <label for="søkfast"><b>Fast aktivitet</b><br>en aktivitet som skjer regelmessig hver uke</label><br><br>
           </div>
-          <div class="søkTextRight">
+          <div class="søkText">
             <label for="søkdato1" class="formHeader">Start og slutt</label> <br><br>
             <input type="date" id="søkdato1" name="Start dato">
             <input type="date" id="søkdato2" name="Slutt dato"><br>
@@ -72,7 +69,7 @@
       </section>
       <section class="søkSection">
         <div class="søkDiv">
-          <div class="søkTextLeft">
+          <div class="søkText">
             <label class="formHeader">Fjern resultater der man må:</label><br><br>
             <input type="checkbox" id="søkpåmelding" name="påmelding" value="Påmelding">
             <label for="søkpåmelding">Melde seg på</label><br>
@@ -81,7 +78,7 @@
             <input type="checkbox" id="søkforhånd" name="forhånd" value="Forhånd">
             <label for="søkforhånd">Forhåndsbetale billetter eller lignende</label><br><br>
           </div>
-          <div class="søkTextRight">
+          <div class="søkText">
             <label for="søknøkkelord" class="formHeader">Nøkkelord</label><br><br>
             <label for="søknøkkelord">For eksempel en type idrett, en organisasjon eller sted</label>
             <input type="text" id="søknøkkelord" name="søknøkkelord" 
@@ -94,13 +91,13 @@
         </section>
         <section class="søkSection">
           <div class="søkDiv">
-            <div class="søkTextLeft">
+            <div class="søkText">
               <label for="søkalder" class="formHeader">Alder</label><br><br>
               <input type="text" id="søkalder" name="alder" size="15"><br>
               <input type="checkbox" id="søkaltalder" name="alder" value="Alle alder">
               <label for="søkaltalder">Vis alt</label><br>
             </div>
-            <div class="søkTextRight">
+            <div class="søkText">
               <label for="søklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
               <input type="radio" id="søkalt" name="aktivitetsnivå" value="Alle aktivitetesnivå">
               <label for="søkalt">Vis alt</label><br>
@@ -113,7 +110,7 @@
             </div>  
           </div>  
           <div class="søkDiv">
-            <div class="søkTextLeft">
+            <div class="søkText">
               <label for="søkgratis" class="formHeader">Hva er prisen?</label><br><br>
               <input type="radio" id="søkvisalt" name="prisklasse" value="Vis alt">
               <label for="søkvisalt">Vis alt</label><br>
@@ -128,7 +125,7 @@
               <input type="radio" id="søkover1000" name="prisklasse" value="Over 1000kr">
               <label for="søkover1000">Over 1000kr</label><br>  <br>
             </div>
-            <div class="søkTextRight">
+            <div class="søkText">
               <label for="søkutstyr_ja" class="formHeader">Behov for aktivitets-relatert utstyr?</label><br><br>
               <input type="radio" id="søkutstyr_alt" name="utstyr" value="Vis alt">
               <label for="søkutstyr_alt">Vis alt</label><br>
