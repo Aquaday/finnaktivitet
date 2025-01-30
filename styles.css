@@ -109,6 +109,7 @@ h1 {
     display: flex;
     width: 70%;
     margin:auto;
+    max-width:100%;
 }
 
 .aktivitetTextLeft {
