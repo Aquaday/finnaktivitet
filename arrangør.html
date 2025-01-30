@@ -26,79 +26,140 @@
     <main>
       <section class="publiserSection">
          <h2>Publiser aktivitet</h2>
-        <div class="publiserDiv">
           <form>
-            <label for="enkel" class="formHeader">Hvilken aktivitet</label><br>
-            <input type="radio" id="enkel" name="aktivitet" value="Enkel aktivitet">
-            <label for="enkel">Enkel aktivitet</label>
-            <input type="radio" id="fast" name="aktivitet" value="Fast aktivitet">
-            <label for="fast">Fast aktivitet</label><br>
-            <label for="navn" class="formHeader">Navn på aktiviteten</label><br>
-            <input type="text" id="navn" name="Navn på aktiviteten"><br>
-            <!-- Adresse input, trenger medå vise deres sted, eller velge ett annet sted -->
-            <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
-            <p style="margin: 0px 0px 0px 30px;">Start og slutt dato</p>
-            <input type="date" id="dato1" name="Start dato">
-            <input type="date" id="dato2" name="Slutt dato"><br>
-            <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
-            <input type="time" id="tidspunkt1" name="Fra tidspunkt">
-            <input type="time" id="tidspunkt2" name="Til tidspunkt"><br>
-            <label for="forkant" class="formHeader">Hva må gjøres i forkant</label><br>
-            <input type="checkbox" id="påmelding" name="påmelding" value="Påmelding">
-            <label for="påmelding">Påmelding</label><br>
-            <input type="checkbox" id="medlemskap" name="medlemskap" value="Medlemskap">
-            <label for="medlemskap">Medlemskap</label><br>
-            <input type="checkbox" id="forhånd" name="forhånd" value="Forhånd">
-            <label for="forhånd">Forhåndsbetaling</label><br>
-            <label for="nøkkelord" class="formHeader">Nøkkelord</label><br>
-            <input type="text" id="nøkkelord" name="nøkkelord" style =" color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
-            <h3>Valgfritt</h3>
-            <label for="url" class="formHeader">Link til nettside</label><br>
-            <input type="url" id="url" name="Link til nettside"><br>
-            <label for="bilde" class="formHeader">Bilde for aktiviteten</label><br>
-            <input type="file" id="bilde" name="Bilde"><br>
-            <label for="lengre_info" class="formHeader">Lengre info om aktiviteten</label><br>
-            <input type="text" id="lengre_info" size="70" name="Lengre info"><br>
-            <label for="lav" class="formHeader">Hvor fysisk krevende er det?</label><br>
-            <input type="radio" id="lav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
-            <label for="lav">Passer for Alle</label><br>
-            <input type="radio" id="middels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
-            <label for="middels">Lettere fysisk kverende</label><br>
-            <input type="radio" id="høy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
-            <label for="høy">Veldig fysisk krevende</label><br>
-            <label for="gratis" class="formHeader">Hva er prisklassen?</label><br>
-            <input type="radio" id="gratis" name="prisklasse" value="Gratis">
-            <label for="gratis">Gratis</label><br>
-            <input type="radio" id="under200" name="prisklasse" value="Under 200kr">
-            <label for="under200">Under 200kr</label><br>
-            <input type="radio" id="under500" name="prisklasse" value="Under 500kr">
-            <label for="under500">Under 500kr</label><br>
-            <input type="radio" id="under1000" name="prisklasse" value="Under 1000kr">
-            <label for="under1000">Under 1000kr</label><br>    
-            <input type="radio" id="over1000" name="prisklasse" value="Over 1000kr">
-            <label for="over1000">Over 1000kr</label><br>    
-            <label for="startalder" class="formHeader">Passer for i alder mellom</label><br>
-            <input type="text" id="startalder" name="startalder" size="5">
-            <label for="sluttalder">og</label>
-            <input type="text" id="sluttalder" name="sluttalder" size="5"><br>
-            <label for="utstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br>
-            <input type="radio" id="utstyr_ja" name="utstyr" value="Trenger utstyr">
-            <label for="utstyr_ja">Ja</label><br>
-            <input type="radio" id="utstyr_lån" name="utstyr" value="Kan låne utstyr">
-            <label for="utstyr_lån">Ja, men kan lånes</label><br>
-            <input type="radio" id="utstyr_nei" name="utstyr" value="Trenger ikke utstyr">
-            <label for="utstyr_nei">Nei, trenger ikke utstyr</label>
-            <label for="infoutstyr">Hvis ja, hva utstyr trenger du</label>
-            <input type="text" id="infoutstyr" name="infoutstyr"><br>
-            <label for="publiseringsdato" class="formHeader">Når vil du publisere aktiviteten?</label><br>
-            <input type="date" id="publiseringsdato" name="Publiseringsdato">
-            <input type="time" id="publiseringstidspunkt" name="Publiseringstidspunkt"><br>
-            <input type="checkbox" id="publiser_nå" name="Publiser Nå">
-            <label for="publiser_nå">Publiser nå</label><br>
-            <input type="submit" value="submit">
-            
-          </form>
-        </div>
+           <div class="publiserDiv">
+            <div class="publiserBoksValgDiv">
+              <label for="enkel" class="formHeader">Hvilken aktivitet</label><br>
+              <input type="radio" id="enkel" name="aktivitet" value="Enkel aktivitet">
+              <label for="enkel">Enkel aktivitet</label>
+              <input type="radio" id="fast" name="aktivitet" value="Fast aktivitet">
+              <label for="fast">Fast aktivitet</label><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+             <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="navn" class="formHeader">Navn på aktiviteten</label><br>
+              <input type="text" id="navn" name="Navn på aktiviteten"><br>
+              <!-- Adresse input, trenger medå vise deres sted, eller velge ett annet sted -->
+            </div>
+            <div class="publiserBoksTekstDiv">
+             <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
+              <p style="margin: 0px 0px 0px 30px;">Start og slutt dato</p>
+              <input type="date" id="dato1" name="Start dato">
+              <input type="date" id="dato2" name="Slutt dato"><br>
+              <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
+              <input type="time" id="tidspunkt1" name="Fra tidspunkt">
+              <input type="time" id="tidspunkt2" name="Til tidspunkt"><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+             <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="forkant" class="formHeader">Hva må gjøres i forkant</label><br>
+              <input type="checkbox" id="påmelding" name="påmelding" value="Påmelding">
+              <label for="påmelding">Påmelding</label><br>
+              <input type="checkbox" id="medlemskap" name="medlemskap" value="Medlemskap">
+              <label for="medlemskap">Medlemskap</label><br>
+              <input type="checkbox" id="forhånd" name="forhånd" value="Forhånd">
+              <label for="forhånd">Forhåndsbetaling</label><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="nøkkelord" class="formHeader">Nøkkelord</label><br>
+              <input type="text" id="nøkkelord" name="nøkkelord" style =" color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
+              <h3>Valgfritt</h3>
+            </div>
+            <div class="publiserBoksTekstDiv">
+             <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="url" class="formHeader">Link til nettside</label><br>
+              <input type="url" id="url" name="Link til nettside"><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="bilde" class="formHeader">Bilde for aktiviteten</label><br>
+              <input type="file" id="bilde" name="Bilde"><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="lengre_info" class="formHeader">Lengre info om aktiviteten</label><br>
+              <input type="text" id="lengre_info" size="30" name="Lengre info"><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="lav" class="formHeader">Hvor fysisk krevende er det?</label><br>
+              <input type="radio" id="lav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
+              <label for="lav">Passer for Alle</label><br>
+              <input type="radio" id="middels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
+              <label for="middels">Lettere fysisk kverende</label><br>
+              <input type="radio" id="høy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
+              <label for="høy">Veldig fysisk krevende</label><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="gratis" class="formHeader">Hva er prisklassen?</label><br>
+              <input type="radio" id="gratis" name="prisklasse" value="Gratis">
+              <label for="gratis">Gratis</label><br>
+              <input type="radio" id="under200" name="prisklasse" value="Under 200kr">
+              <label for="under200">Under 200kr</label><br>
+              <input type="radio" id="under500" name="prisklasse" value="Under 500kr">
+              <label for="under500">Under 500kr</label><br>
+              <input type="radio" id="under1000" name="prisklasse" value="Under 1000kr">
+              <label for="under1000">Under 1000kr</label><br>    
+              <input type="radio" id="over1000" name="prisklasse" value="Over 1000kr">
+              <label for="over1000">Over 1000kr</label><br>   
+            </div>
+            <div class="publiserBoksTekstDiv">
+             <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="startalder" class="formHeader">Passer for i alder mellom</label><br>
+              <input type="text" id="startalder" name="startalder" size="5">
+              <label for="sluttalder">og</label>
+              <input type="text" id="sluttalder" name="sluttalder" size="5"><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="utstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br>
+              <input type="radio" id="utstyr_ja" name="utstyr" value="Trenger utstyr">
+              <label for="utstyr_ja">Ja</label><br>
+              <input type="radio" id="utstyr_lån" name="utstyr" value="Kan låne utstyr">
+              <label for="utstyr_lån">Ja, men kan lånes</label><br>
+              <input type="radio" id="utstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+              <label for="utstyr_nei">Nei, trenger ikke utstyr</label>
+              <label for="infoutstyr">Hvis ja, hva utstyr trenger du</label>
+              <input type="text" id="infoutstyr" name="infoutstyr"><br>
+            </div>
+            <div class="publiserBoksTekstDiv">
+              <p>informasjon om tekst over</p>
+            </div>
+            <div class="publiserBoksValgDiv">
+              <label for="publiseringsdato" class="formHeader">Når vil du publisere aktiviteten?</label><br>
+              <input type="date" id="publiseringsdato" name="Publiseringsdato">
+              <input type="time" id="publiseringstidspunkt" name="Publiseringstidspunkt"><br>
+              <input type="checkbox" id="publiser_nå" name="Publiser Nå">
+              <label for="publiser_nå">Publiser nå</label><br>
+              <input type="submit" value="submit">
+            </div>
+          </div>
+        </form>
       </section>
       <section>
         <p>Ting og tang</p>

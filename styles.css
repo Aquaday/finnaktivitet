@@ -178,7 +178,7 @@ h1 {
     height: 250px;
     border: 2px gray solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding:10px;
+    padding:15px;
     margin: 10px;
 }
 
@@ -196,19 +196,49 @@ h1 {
     justify-content: center;
 }
 
-.publiserSection
+.publiserSection {
+    justify-content: center;
+}
 
 .publiserDiv {
     min-width: 50%;
-    max-width: 80%;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
 }
 
 .publiserDiv input {
     margin-left: 30px;
 }
+
+.publiserBoksValgDiv {
+    border: 2px black solid;
+    min-width: 25%;
+    max-width: 90%;
+    min-height: 100px;
+    padding:10px;
+    margin: 10px;
+}
+
+.publiserBoksTekstDiv {
+    border: 2px black solid;
+    min-width: 65%;
+    max-width: 90%;
+    min-height: 100px;
+    padding:10px;
+    margin: 10px;
+}
+
+.publiserBoksValgDiv input[type="text"] {
+    max-width: 45%;
+    min-height: 100px;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
 
 ul {
     list-style-type: none;
