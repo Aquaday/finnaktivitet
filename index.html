@@ -13,14 +13,16 @@
   <body>
     <header>
         <h1 class="pageTitle" id="header">Finn en aktivitet</h1>
-      <nav>
-        <a href="/index.html"><button type="button"><p class="buttonText">Hjem<p></button></a>
+    </header>
+    <nav>
+      <ul>
+        <a href="/index.html"><button type="button" class="activeNav"><p class="buttonText">Hjem<p></button></a>
         <a href="/om.html"><button type="button"><p class="buttonText">Om oss<p></button></a>
         <a href="/hobby.html"><button type="button"><p class="buttonText">Finn en hobby<p></button></a>
         <a href="/arrangør.html"><button type="button"><p class="buttonText">Arrangørside<p></button></a>
-      </nav>
+      </ul>
       <hr>
-    </header>
+    </nav>
     <main>
       <section class="heroSection">
           <img class="heroImg" src="markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="sykling"> 
@@ -112,7 +114,7 @@
           </div>  
           <div class="søkDiv">
             <div class="søkTextLeft">
-              <label for="søkgratis" class="formHeader">Hva er prisklassen?</label><br><br>
+              <label for="søkgratis" class="formHeader">Hva er prisen?</label><br><br>
               <input type="radio" id="søkvisalt" name="prisklasse" value="Vis alt">
               <label for="søkvisalt">Vis alt</label><br>
               <input type="radio" id="søkgratis" name="prisklasse" value="Gratis">
@@ -127,7 +129,7 @@
               <label for="søkover1000">Over 1000kr</label><br>  <br>
             </div>
             <div class="søkTextRight">
-              <label for="søkutstyr_ja" class="formHeader">Behov for aktivitetsrelatert utstyr?</label><br><br>
+              <label for="søkutstyr_ja" class="formHeader">Behov for aktivitets-relatert utstyr?</label><br><br>
               <input type="radio" id="søkutstyr_alt" name="utstyr" value="Vis alt">
               <label for="søkutstyr_alt">Vis alt</label><br>
               <input type="radio" id="søkutstyr_ja" name="utstyr" value="Trenger utstyr">
