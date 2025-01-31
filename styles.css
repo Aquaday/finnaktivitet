@@ -56,6 +56,11 @@ button {
     width: 150px;
 }
 
+.sectionStyle {
+    max-width: 85%;
+    margin: auto;
+}
+
 .buttonText {
     font-size: 125%;
     font-weight: 500;
@@ -74,13 +79,6 @@ hr {
     border-color: lightblue;
 }
 
-.pageTitle {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-family: "Nokora", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 h1 {
     font-family: "Nokora", serif;
@@ -135,17 +133,10 @@ h1 {
     margin: auto;
 }
 
-.formHeader { 
-    font-weight:400;
-    font-size:150%;
-
-}
-
 .søkSection {
     background-color:rgb(172, 248, 172);
     justify-content: center;
 }
-
 
 .søkSection input[type="text"] {
     width: 20%;
@@ -193,7 +184,6 @@ h1 {
     background-color: rgba(162, 255, 198, 0.863);
 }
 
-
 .søkEnd {
     background-color: rgb(172, 248, 172);
     padding: 20px 0px 20px 0px;
@@ -207,63 +197,38 @@ h1 {
     justify-content: center;
 }
 
-.publiserSection {
-    justify-content: center;
-}
-
-.publiserDiv {
-    min-width: 50%;
-    max-width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-}
-
-.publiserDiv input {
-    margin-left: 30px;
-}
-
-.publiserBoksValgDiv {
-    border: 2px black solid;
-    min-width: 25%;
-    max-width: 90%;
-    padding:10px;
-    margin: 2px;
-}
-
-.publiserBoksTekstDiv {
-    border: 2px black solid;
-    min-width: 65%;
-    max-width: 90%;
-    padding:10px;
-    margin: 2px;
-}
-
-.publiserBoksValgDiv input[type="text"] {
-    max-width: 45%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-
-
 table {
-    background-color: lightcoral;
     width: 85%;
     margin: auto;
+    border-collapse: collapse;
+}
+
+table th, td{
+    border: 2px gray solid;
+    margin: 0px;
+    padding: 15px 5px 15px 5px;
+}
+
+tr:hover {
+    background-color: rgba(255, 166, 0, 0.493);
+}
+
+.tableGjør {
+    background-color: rgb(255, 234, 234);
 }
 
 .Påbegynt {
-    background-color: rgb(240, 238, 128);
+    background-color: rgb(255, 254, 167);
 }
 
 .Ferdig {
-    background-color: greenyellow;
+    background-color: rgb(216, 255, 157);
 }
 
-
+.formHeader { 
+    font-weight:400;
+    font-size:150%;
+}
 
 footer {
     padding-top: 50px;
