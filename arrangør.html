@@ -19,13 +19,15 @@
           <a href="/om.html"><button type="button"><p class="buttonText">Om oss<p></button></a>
           <a href="/hobby.html"><button type="button"><p class="buttonText">Finn en hobby<p></button></a>
           <a href="/arrangør.html"><button type="button" class="activeNav"><p class="buttonText">Arrangørside<p></button></a>
+          <a href="/bruker.html"><button type="button"><p class="buttonText">Brukerside<p></button></a>
+          <a href="/gjøremål.html"><button type="button"><p class="buttonText">Gjøremål<p></button></a>
         </ul>
         <hr>
       </nav>
     </header>
     <main>
       <section class="publiserSection">
-         <h2>Publiser aktivitet</h2>
+         <h1>Publiser aktivitet</h1>
           <form>
            <div class="publiserDiv">
             <div class="publiserBoksValgDiv">
@@ -36,7 +38,8 @@
               <label for="fast">Fast aktivitet</label><br>
             </div>
             <div class="publiserBoksTekstDiv">
-             <p>informasjon om tekst over</p>
+             <p>Enkel aktivitet er noe som du arrangerer max en gang i løpet av en måned. Det kan være ett mesterskap, en spesiell dag i idrettshallen, en fest eller lignende. <br>
+            Fast aktivitet er noe som skjer regelmessig i løpet av året. Det kan være åpningstider i idrettshallen, treningstider til klubben eller faste turer med klubben din.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="navn" class="formHeader">Navn på aktiviteten</label><br>
@@ -44,7 +47,7 @@
               <!-- Adresse input, trenger medå vise deres sted, eller velge ett annet sted -->
             </div>
             <div class="publiserBoksTekstDiv">
-             <p>informasjon om tekst over</p>
+             <p>Navnet på aktiviteten bør minimum inneholde navn på idrett/klubb og bør si kort til brukeren hva det er.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
@@ -56,7 +59,8 @@
               <input type="time" id="tidspunkt2" name="Til tidspunkt"><br>
             </div>
             <div class="publiserBoksTekstDiv">
-             <p>informasjon om tekst over</p>
+             <p>På enkelt aktiviteter skriver man inn start og slutt dato, hvis det er over flere dager, velger man alle datoene som passer, og kan velge klokkeslett inidivuelt på hver dato. <br>
+              Med faste aktiviteter, velger man kun ukedager, og tidspunkt på de dagene. </p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="forkant" class="formHeader">Hva må gjøres i forkant</label><br>
@@ -68,36 +72,40 @@
               <label for="forhånd">Forhåndsbetaling</label><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Med påmelding menes alt som man ikke kan bare dukke opp på, eller ha "drop-in." <br>
+              Medlemskap betyr at man må færst melde seg inn i en klubb eller forening eller organisasjon før man kan få tilgang til aktiviteten. <br>
+            Forhåndsbetaling betyr at man må bestille plass eller biletter før man kna få tilgang til aktivitete. Det kan for eksempel være på konserter, bestille en bane for tennis eller lignende.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="nøkkelord" class="formHeader">Nøkkelord</label><br>
               <input type="text" id="nøkkelord" name="nøkkelord" style =" color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
-              <h3>Valgfritt</h3>
             </div>
             <div class="publiserBoksTekstDiv">
-             <p>informasjon om tekst over</p>
+             <p>Nøkkelord bør ikke være for mange, eller for lite. Har man for mange, kan brukere filtrere vekk noe som gjerne ikke passer til din aktivitet, og har man for lite kan det hende man ikke dukker opp på alle søk. <br>
+            Det bør inneholde sted (som navnet på en hall eller bygg), type aktivitet (idrett, frivillig, klubb, idrettshall), 
+            navn på arrangør (som navnet på idrettsklubben eller frivilligsentral), og om det er hovedfokus på en spesifik del av folket (rullestolbrukere, pensjonister, familie)</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="url" class="formHeader">Link til nettside</label><br>
               <input type="url" id="url" name="Link til nettside"><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Dette kan være for eksempel til sosiale medier, eller til deres egen nettside</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="bilde" class="formHeader">Bilde for aktiviteten</label><br>
               <input type="file" id="bilde" name="Bilde"><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Dette kan enten være noe dere velger selv, eller tar ut ifra en av våres standar bilder som ligger på nettsiden.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="lengre_info" class="formHeader">Lengre info om aktiviteten</label><br>
               <input type="text" id="lengre_info" size="30" name="Lengre info"><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Her er det å skrive så mye detaljer som mulig, sånn at brukerene vet nøyaktig hva de kan forvente når de deltar på aktiviteten. Det bør inneholde litt om hva som kommer til å skje på aktiviteten, 
+                hvor man eventuelt møter opp, og gjerne litt om historikken til aktiviteten, om dette er noe som har vært i noen år eller om det er helt nytt.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="lav" class="formHeader">Hvor fysisk krevende er det?</label><br>
@@ -109,7 +117,9 @@
               <label for="høy">Veldig fysisk krevende</label><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Lavt nivå er ting som alle kan være med på, uten at man må anstrenge seg på noen som helst måte. Det bør da kun være ting man trenger å stå eller sitte for å delta <br>
+                middels er ting man gjerne må bevege seg litt på, enten turer eller bueskyting
+                Høyt nivå er alt man må være veldig aktiv på, som fotball, vollyball, orienteringsløp eller lignende.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="gratis" class="formHeader">Hva er prisklassen?</label><br>
@@ -125,7 +135,7 @@
               <label for="over1000">Over 1000kr</label><br>   
             </div>
             <div class="publiserBoksTekstDiv">
-             <p>informasjon om tekst over</p>
+             <p>Prisklassen går ut ifra hvor mye en person må betale på det billigste for minst en time aktivitet.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="startalder" class="formHeader">Passer for i alder mellom</label><br>
@@ -134,7 +144,7 @@
               <input type="text" id="sluttalder" name="sluttalder" size="5"><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Ganske rett fram, man velger den alders rekkevidden det passer. Hvis det passer for alle, kan man sette 0 til 100, er det for eksempel en voksenklubb for fotball, kan man sette det til for eksempel 18 til 67.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="utstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br>
@@ -148,7 +158,8 @@
               <input type="text" id="infoutstyr" name="infoutstyr"><br>
             </div>
             <div class="publiserBoksTekstDiv">
-              <p>informasjon om tekst over</p>
+              <p>Med spesial utstyr eller aktivitets-relatert utstyr, mener vi alt der man må enten kjøpe eller leie mer utstyr enn sine egne klær og sko for å delta på. <br>
+                For eksempel egen pris på å låne skøyter. Dette gjelder ikke hvis det allerede er innlagt i standard-prisen.</p>
             </div>
             <div class="publiserBoksValgDiv">
               <label for="publiseringsdato" class="formHeader">Når vil du publisere aktiviteten?</label><br>

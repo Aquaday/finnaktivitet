@@ -43,14 +43,14 @@ nav {
 }
 
 .activeNav {
-    background-color: rgb(76, 76, 253);
+    background-color: rgb(172, 248, 172);
 }
 
 button {
     border-radius: 10px;
     cursor: pointer;
     border-color: black;
-    background-color: lightblue;
+    background-color: rgb(223, 223, 223);
     padding: 0px 10px 0px 10px;
     margin: 4px 2px 0px 2px;
     width: 150px;
@@ -59,6 +59,12 @@ button {
 .buttonText {
     font-size: 125%;
     font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 hr {
@@ -87,16 +93,15 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .heroImg {
-    min-width:50%;
+    width:50%;
     margin: auto;
 }
 
 .heroText { 
-    min-width: 50%;
+    width: 50%;
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
@@ -137,7 +142,7 @@ h1 {
 }
 
 .søkSection {
-    background-color:rgb(119, 255, 146);
+    background-color:rgb(172, 248, 172);
     justify-content: center;
 }
 
@@ -173,7 +178,7 @@ h1 {
 }
 
 .søkHeader {
-    background-image: linear-gradient(lightblue, rgb(119, 255, 146));
+    background-color: rgb(172, 248, 172);
     padding: 50px 0px 50px 0px;
 }
 
@@ -185,19 +190,20 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding:15px;
     margin: 10px;
+    background-color: rgba(162, 255, 198, 0.863);
 }
 
 
 .søkEnd {
-    background-image: linear-gradient(rgb(119, 255, 146),white);
+    background-color: rgb(172, 248, 172);
     padding: 20px 0px 20px 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .sectionStyle1 {
-    background-color: lightblue;
-    padding: 30px 100px 50px 100px;
+    background-color: rgba(172, 248, 172, 0.178);
+    padding: 30px 10% 50px 10%;
     justify-content: center;
 }
 
@@ -223,33 +229,41 @@ h1 {
     border: 2px black solid;
     min-width: 25%;
     max-width: 90%;
-    min-height: 100px;
     padding:10px;
-    margin: 10px;
+    margin: 2px;
 }
 
 .publiserBoksTekstDiv {
     border: 2px black solid;
     min-width: 65%;
     max-width: 90%;
-    min-height: 100px;
     padding:10px;
-    margin: 10px;
+    margin: 2px;
 }
 
 .publiserBoksValgDiv input[type="text"] {
     max-width: 45%;
-    min-height: 100px;
     padding: 12px 10px;
     margin: 8px 0;
     box-sizing: border-box;
   }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+table {
+    background-color: lightcoral;
+    width: 85%;
+    margin: auto;
 }
+
+.Påbegynt {
+    background-color: rgb(240, 238, 128);
+}
+
+.Ferdig {
+    background-color: greenyellow;
+}
+
+
 
 footer {
     padding-top: 50px;
