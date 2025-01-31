@@ -105,34 +105,6 @@ h1 {
     padding-right: 50px;
 }
 
-.aktivitetSection {
-    padding: 15px;
-    border-style:solid;
-    border-radius: 30px;
-    display: flex;
-    width: 70%;
-    margin:auto;
-    max-width:100%;
-    flex-wrap:wrap;
-}
-
-.aktivitetTextLeft {
-    padding-right: 50px;
-    padding-left: 50px;
-    width: 35%;
-    text-align:left;
-    margin: auto;
-    border-right-style: dotted;
-}
-
-.aktivitetTextRight {
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 65%;
-    text-align:center;
-    margin: auto;
-}
-
 .søkSection {
     background-color:rgb(172, 248, 172);
     justify-content: center;
@@ -204,13 +176,16 @@ table {
 }
 
 table th, td{
-    border: 2px gray solid;
+    border: 5px rgba(173, 216, 230, 0.74) solid;
     margin: 0px;
     padding: 15px 5px 15px 5px;
 }
+th {
+    background-color: rgb(162, 255, 255);
+}
 
 tr:hover {
-    background-color: rgba(255, 166, 0, 0.493);
+    background-color: rgba(221, 197, 151, 0.493);
 }
 
 .tableGjør {
