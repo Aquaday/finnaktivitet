@@ -30,17 +30,18 @@ body {
 }
 
 header {
-    padding-top: 5px;
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
     width: 100%;
-    padding-bottom: 20px;
-    position: sticky;
-    top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     background-color: white;
+    margin:0px;
 }
 
 .activeNav {
@@ -52,9 +53,16 @@ button {
     cursor: pointer;
     border-color: black;
     background-color: rgb(223, 223, 223);
-    padding: 0px 10px 0px 10px;
-    margin: 4px 2px 0px 2px;
     width: 150px;
+    padding-top: 2px;
+}
+
+nav button {
+    width: 16%;
+    border-style: none;
+    border-radius: 0px;
+    background-color: white;
+    border-color: white;
 }
 
 .sectionStyle {
@@ -65,6 +73,7 @@ button {
 .buttonText {
     font-size: 125%;
     font-weight: 500;
+    padding: 2px 0px;
 }
 
 ul {
@@ -73,11 +82,16 @@ ul {
     padding: 0;
 }
 
+nav li {
+    display: inline;
+}
+
 hr {
     margin-bottom: 0px;
     border-style:solid;
     border-width: 2px;
     border-color: lightblue;
+    margin-top: 0px;
 }
 
 
@@ -225,5 +239,8 @@ textarea {
     max-width: 100%;
 }
 
-@media (max-width:426px) {
+@media (max-width:700px) {
+    nav button {
+        width: 49%;
+    }
 }
