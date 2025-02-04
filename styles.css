@@ -26,6 +26,7 @@ body {
     margin: 0;
     color: rgb(22, 22, 22);
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -100,38 +101,39 @@ h1 {
 
 .heroText { 
     width: 50%;
-    margin: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.søkSection {
+.sokSection {
     background-color:rgb(172, 248, 172);
     justify-content: center;
 }
 
-.søkSection input[type="text"] {
+.sokSection input[type="text"] {
     width: 20%;
     padding: 12px 10px;
     margin: 8px 0;
     box-sizing: border-box;
   }
 
-.søkSection input[name="søknøkkelord"] {
+.sokSection input[name="soknokkelord"] {
     width: 90%;
     padding: 12px 10px;
     margin: 8px 0;
     box-sizing: border-box;
   }
 
-.søkSection input[type="date"] {
+.sokSection input[type="date"] {
     width: 45%;
     padding: 12px 10px;
     margin: 8px 0;
     box-sizing: border-box;
   }
 
-.søkDiv {
+.sokDiv {
     min-width: 50%;
     max-width: 90%;
     display: flex;
@@ -140,12 +142,12 @@ h1 {
     margin: auto;
 }
 
-.søkHeader {
+.sokHeader {
     background-color: rgb(172, 248, 172);
     padding: 50px 0px 50px 0px;
 }
 
-.søkText {
+.sokText {
     font-size: 125%;
     width: 350px;
     height: 250px;
@@ -156,7 +158,7 @@ h1 {
     background-color: rgba(162, 255, 198, 0.863);
 }
 
-.søkEnd {
+.sokEnd {
     background-color: rgb(172, 248, 172);
     padding: 20px 0px 20px 0px;
     margin-left: auto;
@@ -170,7 +172,7 @@ h1 {
 }
 
 table {
-    width: 85%;
+    width: 100%;
     margin: auto;
     border-collapse: collapse;
 }
@@ -180,6 +182,11 @@ table th, td{
     margin: 0px;
     padding: 15px 5px 15px 5px;
 }
+
+.tableDiv {
+    overflow-x:auto;
+}
+
 th {
     background-color: rgb(162, 255, 255);
 }
@@ -188,11 +195,11 @@ tr:hover {
     background-color: rgba(221, 197, 151, 0.493);
 }
 
-.tableGjør {
+.tableGjor {
     background-color: rgb(255, 234, 234);
 }
 
-.Påbegynt {
+.Pabegynt {
     background-color: rgb(255, 254, 167);
 }
 
@@ -212,4 +219,11 @@ footer {
 .footerText {
     padding-top: 25px;
     padding-bottom: 50px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+@media (max-width:426px) {
 }

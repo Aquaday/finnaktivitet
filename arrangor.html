@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Arrangorside</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index.html">
+              <button type="button" class="buttonText">Hjem</button>
+            </a>
+          </li>
+          <li>
+            <a href="/om.html">
+              <button type="button" class="buttonText">Om oss</button>
+            </a>
+          </li>
+          <li>
+            <a href="/hobby.html">
+              <button type="button" class="buttonText">Finn en hobby</button>
+            </a>
+          </li>
+          <li>
+            <a href="/arrangor.html">
+              <button type="button" class="activeNav buttonText">Arrangorside</button>
+            </a>
+          </li>
+          <li>
+            <a href="/bruker.html">
+              <button type="button" class="buttonText">Brukerside</button>
+            </a>
+          </li>
+          <li>
+            <a href="/gjoremal.html">
+              <button type="button" class="buttonText">Gjoremal</button>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Legge til aktiviteter</h1>
+      </section>
+      <section>
+        <form>
+          <div class="tableDiv">
+            <table class="tableArrangor">
+              <tr>
+                <th>Utfylling av informasjon</th>
+                <th>informasjon og forklaring</th>
+              </tr>
+              <tr>
+                <td> 
+                  <label for="enkel" class="formHeader">Hvilken aktivitet</label><br>
+                  <input type="radio" id="enkel" name="aktivitet" value="Enkel aktivitet">
+                  <label for="enkel">Enkel aktivitet</label>
+                  <input type="radio" id="fast" name="aktivitet" value="Fast aktivitet">
+                  <label for="fast">Fast aktivitet</label><br>
+                </td>
+                <td>
+                  <p>Enkel aktivitet er noe som du arrangerer max en gang i lopet av en maned. Det kan være ett mesterskap, en spesiell dag i idrettshallen, en fest eller lignende. <br>
+                    Fast aktivitet er noe som skjer regelmessig i lopet av aret. Det kan være apningstider i idrettshallen, treningstider til klubben eller faste turer med klubben din.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="navn" class="formHeader">Navn pa aktiviteten</label><br>
+                  <input type="text" id="navn" name="Navn pa aktiviteten"><br>
+                  <!-- Adresse input, trenger meda vise deres sted, eller velge ett annet sted -->
+                </td>
+                <td>
+                  <p>Navnet pa aktiviteten bor minimum inneholde navn pa idrett/klubb og bor si kort til brukeren hva det er.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
+                  <p style="margin: 0px 0px 0px 30px;">Start og slutt dato</p>
+                  <input type="date" id="dato1" name="Start dato">
+                  <input type="date" id="dato2" name="Slutt dato"><br>
+                  <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
+                  <input type="time" id="tidspunkt1" name="Fra tidspunkt">
+                  <input type="time" id="tidspunkt2" name="Til tidspunkt"><br>
+                </td>
+                <td>
+                  <p>Pa enkelt aktiviteter skriver man inn start og slutt dato, hvis det er over flere dager, velger man alle datoene som passer, og kan velge klokkeslett inidivuelt pa hver dato. <br>
+                    Med faste aktiviteter, velger man kun ukedager, og tidspunkt pa de dagene. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="forkant" class="formHeader">Hva ma gjores i forkant</label><br>
+                  <input type="checkbox" id="pamelding" name="pamelding" value="Pamelding">
+                  <label for="pamelding">Pamelding</label><br>
+                  <input type="checkbox" id="medlemskap" name="medlemskap" value="Medlemskap">
+                  <label for="medlemskap">Medlemskap</label><br>
+                  <input type="checkbox" id="forhand" name="forhand" value="Forhand">
+                  <label for="forhand">Forhandsbetaling</label><br>
+                </td>
+                <td>
+                  <p>Med pamelding menes alt som man ikke kan bare dukke opp pa, eller ha "drop-in." <br>
+                    Medlemskap betyr at man ma færst melde seg inn i en klubb eller forening eller organisasjon for man kan fa tilgang til aktiviteten. <br>
+                  Forhandsbetaling betyr at man ma bestille plass eller biletter for man kna fa tilgang til aktivitete. Det kan for eksempel være pa konserter, bestille en bane for tennis eller lignende.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+
+                <label for="nokkelord" class="formHeader">Nokkelord</label><br>
+                  <input type="text" id="nokkelord" name="nokkelord" style =" color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett">
+                </td>
+                <td>
+                  <p>Nokkelord bor ikke være for mange, eller for lite. Har man for mange, kan brukere filtrere vekk noe som gjerne ikke passer til din aktivitet, og har man for lite kan det hende man ikke dukker opp pa alle sok. <br>
+                    Det bor inneholde sted (som navnet pa en hall eller bygg), type aktivitet (idrett, frivillig, klubb, idrettshall), 
+                    navn pa arrangor (som navnet pa idrettsklubben eller frivilligsentral), og om det er hovedfokus pa en spesifik del av folket (rullestolbrukere, pensjonister, familie)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="url" class="formHeader">Link til nettside</label><br>
+                  <input type="url" id="url" name="Link til nettside"><br>
+                </td>
+                <td>
+                  <p>Dette kan være for eksempel til sosiale medier, eller til deres egen nettside</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="bilde" class="formHeader">Bilde for aktiviteten</label><br>
+                  <input type="file" id="bilde" name="Bilde"><br>
+                </td>
+                <td>
+                  <p>Dette kan enten være noe dere velger selv, eller tar ut ifra en av vares standar bilder som ligger pa nettsiden.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="lengre_info" class="formHeader">Lengre info om aktiviteten</label><br>
+                  <input type="text" id="lengre_info" size="30" name="Lengre info"><br>
+                </td>
+                <td>
+                  <p>Her er det a skrive sa mye detaljer som mulig, sann at brukerene vet noyaktig hva de kan forvente nar de deltar pa aktiviteten. Det bor inneholde litt om hva som kommer til a skje pa aktiviteten, 
+                    hvor man eventuelt moter opp, og gjerne litt om historikken til aktiviteten, om dette er noe som har vært i noen ar eller om det er helt nytt.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="lav" class="formHeader">Hvor fysisk krevende er det?</label><br>
+                  <input type="radio" id="lav" name="aktivitetsniva" value="Lav aktivitetesniva">
+                  <label for="lav">Passer for Alle</label><br>
+                  <input type="radio" id="middels" name="aktivitetsniva" value="Middels aktivitetesniva">
+                  <label for="middels">Lettere fysisk kverende</label><br>
+                  <input type="radio" id="hoy" name="aktivitetsniva" value="Hoy aktivitetesniva">
+                  <label for="hoy">Veldig fysisk krevende</label><br>
+                </td>
+                <td>
+                  <p>Lavt niva er ting som alle kan være med pa, uten at man ma anstrenge seg pa noen som helst mate. Det bor da kun være ting man trenger a sta eller sitte for a delta <br>
+                    middels er ting man gjerne ma bevege seg litt pa, enten turer eller bueskyting
+                    Hoyt niva er alt man ma være veldig aktiv pa, som fotball, vollyball, orienteringslop eller lignende.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="gratis" class="formHeader">Hva er prisklassen?</label><br>
+                  <input type="radio" id="gratis" name="prisklasse" value="Gratis">
+                  <label for="gratis">Gratis</label><br>
+                  <input type="radio" id="under200" name="prisklasse" value="Under 200kr">
+                  <label for="under200">Under 200kr</label><br>
+                  <input type="radio" id="under500" name="prisklasse" value="Under 500kr">
+                  <label for="under500">Under 500kr</label><br>
+                  <input type="radio" id="under1000" name="prisklasse" value="Under 1000kr">
+                  <label for="under1000">Under 1000kr</label><br>    
+                  <input type="radio" id="over1000" name="prisklasse" value="Over 1000kr">
+                  <label for="over1000">Over 1000kr</label><br>  
+                </td>
+                <td>
+                  <p>Prisklassen gar ut ifra hvor mye en person ma betale pa det billigste for minst en time aktivitet.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="startalder" class="formHeader">Passer for i alder mellom</label><br>
+                  <input type="text" id="startalder" name="startalder" size="5">
+                  <label for="sluttalder">og</label>
+                  <input type="text" id="sluttalder" name="sluttalder" size="5"><br>
+                </td>
+                <td>
+                  <p>Ganske rett fram, man velger den alders rekkevidden det passer. Hvis det passer for alle, kan man sette 0 til 100, er det for eksempel en voksenklubb for fotball, kan man sette det til for eksempel 18 til 67.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <label for="utstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br>
+                  <input type="radio" id="utstyr_ja" name="utstyr" value="Trenger utstyr">
+                  <label for="utstyr_ja">Ja</label><br>
+                  <input type="radio" id="utstyr_lan" name="utstyr" value="Kan lane utstyr">
+                  <label for="utstyr_lan">Ja, men kan lanes</label><br>
+                  <input type="radio" id="utstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+                  <label for="utstyr_nei">Nei, trenger ikke utstyr</label>
+                  <label for="infoutstyr">Hvis ja, hva utstyr trenger du</label>
+                  <input type="text" id="infoutstyr" name="infoutstyr"><br>
+                </td>
+                <td>
+                  <p>Med spesial utstyr eller aktivitets-relatert utstyr, mener vi alt der man ma enten kjope eller leie mer utstyr enn sine egne klær og sko for a delta pa. <br>
+                    For eksempel egen pris pa a lane skoyter. Dette gjelder ikke hvis det allerede er innlagt i standard-prisen.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+            <label for="publiseringsdato" class="formHeader">Nar vil du publisere aktiviteten?</label><br>
+            <input type="date" id="publiseringsdato" name="Publiseringsdato">
+            <input type="time" id="publiseringstidspunkt" name="Publiseringstidspunkt"><br>
+            <input type="checkbox" id="publiser_na" name="Publiser Na">
+            <label for="publiser_na">Publiser na</label><br>
+            <input type="submit" value="submit">
+        </form>
+      </section>      
+      <section>
+        <h1>Endre aktiviteter</h1>
+      </section>
+      <section>
+        <div class="tableDiv">
+          <table>
+            <tr>
+              <th>Navn</th>
+              <th>Dato</th>
+              <th>Rute for endring</th>
+              <th>Lagre eller fjerne</th>
+            </tr>
+            <tr>
+              <td>
+                <p>Forste aktivitet</p>
+              </td>
+              <td>
+                <p>Start 01.01.25</p>
+              </td>
+              <td>
+                <label for="enkel" class="formHeader">Hvilken aktivitet</label>
+                  <input type="radio" id="enkel" name="aktivitet" value="Enkel aktivitet">
+                  <label for="enkel">Enkel aktivitet</label>
+                  <input type="radio" id="fast" name="aktivitet" value="Fast aktivitet">
+                  <label for="fast">Fast aktivitet</label><br>
+                  ---osv--- <br>
+                  <label for="utstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br>
+                  <input type="radio" id="utstyr_ja" name="utstyr" value="Trenger utstyr">
+                  <label for="utstyr_ja">Ja</label><br>
+                  <input type="radio" id="utstyr_lan" name="utstyr" value="Kan lane utstyr">
+                  <label for="utstyr_lan">Ja, men kan lanes</label><br>
+                  <input type="radio" id="utstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+                  <label for="utstyr_nei">Nei, trenger ikke utstyr</label>
+                  <label for="infoutstyr">Hvis ja, hva utstyr trenger du</label>
+                  <input type="text" id="infoutstyr" name="infoutstyr"><br>
+              </td>
+              <td>
+                <button style="margin-bottom: 30px;padding:5px;">Lagre endring</button><br>
+                <button style="padding: 5px;">Fjern aktivitet</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Andre aktivitet</p>
+              </td>
+              <td>
+                <p>Start 07.01.25</p>
+              </td>
+              <td>
+                <label for="enkel" class="formHeader">Hvilken aktivitet</label>
+                  <input type="radio" id="enkel" name="aktivitet" value="Enkel aktivitet">
+                  <label for="enkel">Enkel aktivitet</label>
+                  <input type="radio" id="fast" name="aktivitet" value="Fast aktivitet">
+                  <label for="fast">Fast aktivitet</label><br>
+                  ---osv--- <br>
+                  <label for="utstyr_ja" class="formHeader">Behov for spesialutstyr?</label><br>
+                  <input type="radio" id="utstyr_ja" name="utstyr" value="Trenger utstyr">
+                  <label for="utstyr_ja">Ja</label><br>
+                  <input type="radio" id="utstyr_lan" name="utstyr" value="Kan lane utstyr">
+                  <label for="utstyr_lan">Ja, men kan lanes</label><br>
+                  <input type="radio" id="utstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+                  <label for="utstyr_nei">Nei, trenger ikke utstyr</label>
+                  <label for="infoutstyr">Hvis ja, hva utstyr trenger du</label>
+                  <input type="text" id="infoutstyr" name="infoutstyr"><br>
+              </td>
+              <td>
+                <button style="margin-bottom: 30px;padding: 5px;">Lagre endring</button><br>
+                <button style="padding: 5px;">Fjern aktivitet</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <section class="footerText">
+      <p>nettside laget av Martin<br>
+      <a href="https://github.com/Aquaday">https://github.com/Aquaday</a>
+      </p>
+      </section>
+    </footer>
+  </body>
+</html>

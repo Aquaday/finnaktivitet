@@ -14,12 +14,36 @@
     <main>
       <nav>
           <ul>
-            <a href="/index.html"><button type="button" class="activeNav"><p class="buttonText">Hjem<p></button></a>
-            <a href="/om.html"><button type="button"><p class="buttonText">Om oss<p></button></a>
-            <a href="/hobby.html"><button type="button"><p class="buttonText">Finn en hobby<p></button></a>
-            <a href="/arrangør.html"><button type="button"><p class="buttonText">Arrangørside<p></button></a>
-            <a href="/bruker.html"><button type="button"><p class="buttonText">Brukerside<p></button></a>
-            <a href="/gjøremål.html"><button type="button"><p class="buttonText">Gjøremål<p></button></a>
+            <li>
+              <a href="/index.html">
+                <button type="button" class="activeNav buttonText">Hjem</button>
+              </a>
+            </li>
+            <li>
+              <a href="/om.html">
+                <button type="button" class="buttonText">Om oss</button>
+              </a>
+            </li>
+            <li>
+              <a href="/hobby.html">
+                <button type="button" class="buttonText">Finn en hobby</button>
+              </a>
+            </li>
+            <li>
+              <a href="/arrangor.html">
+                <button type="button" class="buttonText">Arrangorside</button>
+              </a>
+            </li>
+            <li>
+              <a href="/bruker.html">
+                <button type="button" class="buttonText">Brukerside</button>
+              </a>
+            </li>
+            <li>
+              <a href="/gjoremal.html">
+                <button type="button" class="buttonText">Gjoremal</button>
+              </a>
+            </li>
           </ul>
           <hr>
         </nav>
@@ -27,10 +51,10 @@
           <img class="heroImg" src="markus-spiske-WUehAgqO5hE-unsplash.jpg" alt="sykling"> 
         <div class="heroText">
           <h1>Finn en aktivitet</h1>
-          <p>Dette er en nettside som skal gjøre det raskt og enkelt for brukere å finne aktiviteter som passer for de, og som skal gjøre det enklere for arrangører å reklamere for aktivitetene uten at de må betale for det</p>
-          <p>Ting som kan være på siden er for eksempel åpningstider til ett klubbhus/frivilligsentral/idrettshaller, 
+          <p>Dette er en nettside som skal gjore det raskt og enkelt for brukere a finne aktiviteter som passer for de, og som skal gjore det enklere for arrangorer a reklamere for aktivitetene uten at de ma betale for det</p>
+          <p>Ting som kan være pa siden er for eksempel apningstider til ett klubbhus / frivilligsentral / idrettshaller, 
             enkel aktivitet som en fellestur opp ulrikken, en festival, en konsert eller ett norgesmesterskap, 
-            og det kan være for idretter som viser treningstider, store arrangmeneter, og muligheter til å prøve idretten</p>
+            og det kan være for idretter som viser treningstider, store arrangmeneter, og muligheter til a prove idretten</p>
         </div>
       </section>
         
@@ -38,53 +62,53 @@
         <div>
          <h1>Hvordan skal det fungere?</h1>
           <ol style="list-style-type: circle;text-align: left;margin-bottom: 0px;">
-          <li> Arrangører legger inn sine aktiviteter på siden <a href="/arrangør.html">Arrangør Side</a></li>
+          <li> Arrangorer legger inn sine aktiviteter pa siden <a href="/arrangor.html">Arrangor Side</a></li>
           <li> Informasjonen lagres i en database for nettsiden</li>
-          <li> Brukere søker etter det de ønsker, der de kan velge for eksempel tidsrom, avstand, alder, aktivitetsnivå, og prisklasse</li>
-          <li> Resultatene dukker opp enten på kart, eller som en lengre liste </li>
-          <li> Brukere kan da trykke innpå og finne all informasjonen, sammen med all informasjonen om arrangører og nettside og diverse</li>
-          <li> Arrangører kan også gå inn og endre på informasjonen etter den er publisert, og de skal få opp ett forslag til hvordan de kan poste det på sosiale medier</li>
+          <li> Brukere soker etter det de onsker, der de kan velge for eksempel tidsrom, avstand, alder, aktivitetsniva, og prisklasse</li>
+          <li> Resultatene dukker opp enten pa kart, eller som en lengre liste </li>
+          <li> Brukere kan da trykke innpa og finne all informasjonen, sammen med all informasjonen om arrangorer og nettside og diverse</li>
+          <li> Arrangorer kan ogsa ga inn og endre pa informasjonen etter den er publisert, og de skal fa opp ett forslag til hvordan de kan poste det pa sosiale medier</li>
           </ol>
         </div>
 
       </section>
-      <section class="søkHeader">
+      <section class="sokHeader">
         <h1>Hvilken aktivitet ser du etter?</h1>
       </section>
-      <section class="søkSection">
-        <div class="søkDiv">
-          <div class="søkText">
-            <label for="søkenkel" class="formHeader">Hvilken aktivitet</label><br>
-            <br><input type="radio" id="søkenkel" name="aktivitet" value="Enkel aktivitet">
-            <label for="søkenkel"><b>Enkel aktivitet</b><br>noe som skjer kun en dag eller over en liten periode</label><br><br>
-            <input type="radio" id="søkfast" name="aktivitet" value="Fast aktivitet">
-            <label for="søkfast"><b>Fast aktivitet</b><br>en aktivitet som skjer regelmessig hver uke</label><br><br>
+      <section class="sokSection">
+        <div class="sokDiv">
+          <div class="sokText">
+            <label for="sokenkel" class="formHeader">Hvilken aktivitet</label><br>
+            <br><input type="radio" id="sokenkel" name="aktivitet" value="Enkel aktivitet">
+            <label for="sokenkel"><b>Enkel aktivitet</b><br>noe som skjer kun en dag eller over en liten periode</label><br><br>
+            <input type="radio" id="sokfast" name="aktivitet" value="Fast aktivitet">
+            <label for="sokfast"><b>Fast aktivitet</b><br>en aktivitet som skjer regelmessig hver uke</label><br><br>
           </div>
-          <div class="søkText">
-            <label for="søkdato1" class="formHeader">Start og slutt</label> <br><br>
-            <input type="date" id="søkdato1" name="Start dato">
-            <input type="date" id="søkdato2" name="Slutt dato"><br>
-            <label for="søktidspunkt1">I tidspunktet mellom</label><br>
-            <input type="time" id="søktidspunkt1" name="Fra tidspunkt"> og
-            <input type="time" id="søktidspunkt2" name="Til tidspunkt"><br>
+          <div class="sokText">
+            <label for="sokdato1" class="formHeader">Start og slutt</label> <br><br>
+            <input type="date" id="sokdato1" name="Start dato">
+            <input type="date" id="sokdato2" name="Slutt dato"><br>
+            <label for="soktidspunkt1">I tidspunktet mellom</label><br>
+            <input type="time" id="soktidspunkt1" name="Fra tidspunkt"> og
+            <input type="time" id="soktidspunkt2" name="Til tidspunkt"><br>
           </div>
         </div>
       </section>
-      <section class="søkSection">
-        <div class="søkDiv">
-          <div class="søkText">
-            <label class="formHeader">Fjern resultater der man må:</label><br><br>
-            <input type="checkbox" id="søkpåmelding" name="påmelding" value="Påmelding">
-            <label for="søkpåmelding">Melde seg på</label><br>
-            <input type="checkbox" id="søkmedlemskap" name="medlemskap" value="Medlemskap">
-            <label for="søkmedlemskap">Registrere medlemskap</label><br>
-            <input type="checkbox" id="søkforhånd" name="forhånd" value="Forhånd">
-            <label for="søkforhånd">Forhåndsbetale billetter eller lignende</label><br><br>
+      <section class="sokSection">
+        <div class="sokDiv">
+          <div class="sokText">
+            <label class="formHeader">Fjern resultater der man ma:</label><br><br>
+            <input type="checkbox" id="sokpamelding" name="pamelding" value="Pamelding">
+            <label for="sokpamelding">Melde seg pa</label><br>
+            <input type="checkbox" id="sokmedlemskap" name="medlemskap" value="Medlemskap">
+            <label for="sokmedlemskap">Registrere medlemskap</label><br>
+            <input type="checkbox" id="sokforhand" name="forhand" value="Forhand">
+            <label for="sokforhand">Forhandsbetale billetter eller lignende</label><br><br>
           </div>
-          <div class="søkText">
-            <label for="søknøkkelord" class="formHeader">Nøkkelord</label><br><br>
-            <label for="søknøkkelord">For eksempel en type idrett, en organisasjon eller sted</label>
-            <input type="text" id="søknøkkelord" name="søknøkkelord" 
+          <div class="sokText">
+            <label for="soknokkelord" class="formHeader">Nokkelord</label><br><br>
+            <label for="soknokkelord">For eksempel en type idrett, en organisasjon eller sted</label>
+            <input type="text" id="soknokkelord" name="soknokkelord" 
                   style ="color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett"><br>
           </div> 
         </div> 
@@ -92,56 +116,56 @@
         <section style="background-color: rgb(172, 248, 172);;padding: 50px 0px 50px 0px;">
           <h2 style="font-weight: 300; font-size: 150%;">Valgfritt</h2>
         </section>
-        <section class="søkSection">
-          <div class="søkDiv">
-            <div class="søkText">
-              <label for="søkalder" class="formHeader">Alder</label><br><br>
-              <input type="text" id="søkalder" name="alder" size="15"><br>
-              <input type="checkbox" id="søkaltalder" name="alder" value="Alle alder">
-              <label for="søkaltalder">Vis alt</label><br>
+        <section class="sokSection">
+          <div class="sokDiv">
+            <div class="sokText">
+              <label for="sokalder" class="formHeader">Alder</label><br><br>
+              <input type="text" id="sokalder" name="alder" size="15"><br>
+              <input type="checkbox" id="sokaltalder" name="alder" value="Alle alder">
+              <label for="sokaltalder">Vis alt</label><br>
             </div>
-            <div class="søkText">
-              <label for="søklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
-              <input type="radio" id="søkalt" name="aktivitetsnivå" value="Alle aktivitetesnivå">
-              <label for="søkalt">Vis alt</label><br>
-              <input type="radio" id="søklav" name="aktivitetsnivå" value="Lav aktivitetesnivå">
-              <label for="søklav">Passer for Alle</label><br>
-              <input type="radio" id="søkmiddels" name="aktivitetsnivå" value="Middels aktivitetesnivå">
-              <label for="søkmiddels">Lettere fysisk kverende</label><br>
-              <input type="radio" id="søkhøy" name="aktivitetsnivå" value="Høy aktivitetesnivå">
-              <label for="søkhøy">Veldig fysisk krevende</label><br><br>
+            <div class="sokText">
+              <label for="soklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
+              <input type="radio" id="sokalt" name="aktivitetsniva" value="Alle aktivitetesniva">
+              <label for="sokalt">Vis alt</label><br>
+              <input type="radio" id="soklav" name="aktivitetsniva" value="Lav aktivitetesniva">
+              <label for="soklav">Passer for Alle</label><br>
+              <input type="radio" id="sokmiddels" name="aktivitetsniva" value="Middels aktivitetesniva">
+              <label for="sokmiddels">Lettere fysisk kverende</label><br>
+              <input type="radio" id="sokhoy" name="aktivitetsniva" value="Hoy aktivitetesniva">
+              <label for="sokhoy">Veldig fysisk krevende</label><br><br>
             </div>  
           </div>  
-          <div class="søkDiv">
-            <div class="søkText">
-              <label for="søkgratis" class="formHeader">Hva er prisen?</label><br><br>
-              <input type="radio" id="søkvisalt" name="prisklasse" value="Vis alt">
-              <label for="søkvisalt">Vis alt</label><br>
-              <input type="radio" id="søkgratis" name="prisklasse" value="Gratis">
-              <label for="søkgratis">Gratis</label><br>
-              <input type="radio" id="søkunder200" name="prisklasse" value="Under 200kr">
-              <label for="søkunder200">Under 200kr</label><br>
-              <input type="radio" id="søkunder500" name="prisklasse" value="Under 500kr">
-              <label for="søkunder500">Under 500kr</label><br>
-              <input type="radio" id="søkunder1000" name="prisklasse" value="Under 1000kr">
-              <label for="søkunder1000">Under 1000kr</label><br>    
-              <input type="radio" id="søkover1000" name="prisklasse" value="Over 1000kr">
-              <label for="søkover1000">Over 1000kr</label><br>  <br>
+          <div class="sokDiv">
+            <div class="sokText">
+              <label for="sokgratis" class="formHeader">Hva er prisen?</label><br><br>
+              <input type="radio" id="sokvisalt" name="prisklasse" value="Vis alt">
+              <label for="sokvisalt">Vis alt</label><br>
+              <input type="radio" id="sokgratis" name="prisklasse" value="Gratis">
+              <label for="sokgratis">Gratis</label><br>
+              <input type="radio" id="sokunder200" name="prisklasse" value="Under 200kr">
+              <label for="sokunder200">Under 200kr</label><br>
+              <input type="radio" id="sokunder500" name="prisklasse" value="Under 500kr">
+              <label for="sokunder500">Under 500kr</label><br>
+              <input type="radio" id="sokunder1000" name="prisklasse" value="Under 1000kr">
+              <label for="sokunder1000">Under 1000kr</label><br>    
+              <input type="radio" id="sokover1000" name="prisklasse" value="Over 1000kr">
+              <label for="sokover1000">Over 1000kr</label><br>  <br>
             </div>
-            <div class="søkText">
-              <label for="søkutstyr_ja" class="formHeader">Behov for aktivitets-relatert utstyr?</label><br><br>
-              <input type="radio" id="søkutstyr_alt" name="utstyr" value="Vis alt">
-              <label for="søkutstyr_alt">Vis alt</label><br>
-              <input type="radio" id="søkutstyr_ja" name="utstyr" value="Trenger utstyr">
-              <label for="søkutstyr_ja">Ja</label><br>
-              <input type="radio" id="søkutstyr_lån" name="utstyr" value="Kan låne utstyr">
-              <label for="søkutstyr_lån">Ja, men kan lånes</label><br>
-              <input type="radio" id="søkutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
-              <label for="søkutstyr_nei">Nei, trenger ikke utstyr</label>
+            <div class="sokText">
+              <label for="sokutstyr_ja" class="formHeader">Behov for aktivitets-relatert utstyr?</label><br><br>
+              <input type="radio" id="sokutstyr_alt" name="utstyr" value="Vis alt">
+              <label for="sokutstyr_alt">Vis alt</label><br>
+              <input type="radio" id="sokutstyr_ja" name="utstyr" value="Trenger utstyr">
+              <label for="sokutstyr_ja">Ja</label><br>
+              <input type="radio" id="sokutstyr_lan" name="utstyr" value="Kan lane utstyr">
+              <label for="sokutstyr_lan">Ja, men kan lanes</label><br>
+              <input type="radio" id="sokutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+              <label for="sokutstyr_nei">Nei, trenger ikke utstyr</label>
             </div>
           </div>
         </section>
-        <section class="søkEnd">
+        <section class="sokEnd">
           <a href="#kart"><button type="button" >Vis i kart</button></a>
           <a href="#infoboks"><button type="button" >Vis i liste</button></a><br><br>
       </section>
@@ -157,57 +181,59 @@
         <h1 id="infoboks">Infoboks om aktivitetene fra resultatene</h1>
       </section>
       <section>
-        <table>
-          <tr>
-            <th>info</th>
-            <th>Detaljer</th>
-          </tr>
-          <tr>
-            <td>
-              <h2 id="FontenehusetTurgruppe">Fontenehuset Turgruppe</h2>
-              <h6>Arrangeres av <a href="/om.html">Fontenehuset Bergen</a><br>Skutevikensboder 11, 5035 Bergen</h6>
-              <h5>Hver torsdag kl 09:00-15:00</h5>
-              <a href="https://www.fontenehusetbergen.no"> www.fontenehusetbergen.com</a>
-              <h5>Nøkkelord: <ins>Turgruppe</ins> - <ins>Fontenehuset</ins> - <ins>Bergen</ins> - <ins>PsykiskHelse</ins></h5>
-            </td>
-            <td>
-              <h5>Velkommen til turgruppe hver torsdag hos fontenehuset!<br> Alle som har meldt seg inn kan delta, og det er ikke behov for å ta med seg noe mer enn gode klær og sko. <br>Resten av utstyret kan du låne hos oss :) <br><br>
-                Innmelding er gratis, og du kan lese mer om vårt tilbud her: <ins>www.fontenehusetbergen.com/bli-medlem/</ins></h5>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Flere resultater
-            </td>
-            <td>
-              mer informasjon
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Flere resultater
-            </td>
-            <td>
-              mer informasjon
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Flere resultater
-            </td>
-            <td>
-              mer informasjon
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Flere resultater
-            </td>
-            <td>
-              mer informasjon
-            </td>
-          </tr>
-        </table>
+        <div class="tableDiv">
+          <table>
+            <tr>
+              <th>info</th>
+              <th>Detaljer</th>
+            </tr>
+            <tr>
+              <td>
+                <h2 id="FontenehusetTurgruppe">Fontenehuset Turgruppe</h2>
+                <h6>Arrangeres av <a href="/om.html">Fontenehuset Bergen</a><br>Skutevikensboder 11, 5035 Bergen</h6>
+                <h5>Hver torsdag kl 09:00-15:00</h5>
+                <a href="https://www.fontenehusetbergen.no"> www.fontenehusetbergen.com</a>
+                <h5>Nokkelord: <ins>Turgruppe</ins> - <ins>Fontenehuset</ins> - <ins>Bergen</ins> - <ins>PsykiskHelse</ins></h5>
+              </td>
+              <td>
+                <h5>Velkommen til turgruppe hver torsdag hos fontenehuset!<br> Alle som har meldt seg inn kan delta, og det er ikke behov for a ta med seg noe mer enn gode klær og sko. <br>Resten av utstyret kan du lane hos oss :) <br><br>
+                  Innmelding er gratis, og du kan lese mer om vart tilbud her: <ins>www.fontenehusetbergen.com/bli-medlem/</ins></h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
       <section style="padding: 20px;">
         <a href="#heroSection"><button type="button" style="padding:20px">Til toppen</button></a>

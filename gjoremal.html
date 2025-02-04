@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Gjoremal</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index.html">
+              <button type="button" class="buttonText">Hjem</button>
+            </a>
+          </li>
+          <li>
+            <a href="/om.html">
+              <button type="button" class="buttonText">Om oss</button>
+            </a>
+          </li>
+          <li>
+            <a href="/hobby.html">
+              <button type="button" class="buttonText">Finn en hobby</button>
+            </a>
+          </li>
+          <li>
+            <a href="/arrangor.html">
+              <button type="button" class="buttonText">Arrangorside</button>
+            </a>
+          </li>
+          <li>
+            <a href="/bruker.html">
+              <button type="button" class="buttonText">Brukerside</button>
+            </a>
+          </li>
+          <li>
+            <a href="/gjoremal.html">
+              <button type="button" class="activeNav buttonText">Gjoremal</button>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </nav>
+    </header>
+    <main>
+      <section class="sectionStyle">
+        <h1>Liste over gjoremal</h1>
+        <p>Dette er en liste over gjoremal for hva som ma gjores for at siden skal bli ferdig, og brukes av bade brukere og arrangorer. <br>
+          Den har ogsa ett delmal for presentasjonsvis, til a pitche ideen til de som onsker a være med. <br><br>
+        Steg nummer er ut ifra utviklingsprossesen av nettsiden. <br>
+        1 betyr at den ma være klar for pitching av ide. <br>
+        2 betyr at det trengs for a kunne bruke siden til a legge inn arrangementer<br>
+        3 betyr at det trengs for a publisere og bruke siden for brukere <br>
+        4 betyr ekstra ting som ikke trengs, men hadde vært kult a ha</p>
+      </section>
+      <section>
+        <p>Lite over gjoremal</p>
+        <table class="tableGjor">
+          <!--
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+            -->
+            
+            <tr>
+            <th>Navn pa gjoremal</th>
+            <th>Hvilken side</th>
+            <th>Hva ma gjores</th>
+            <th>Steg nummer</th>
+          </tr>
+          <tr class="Pabegynt">
+            <td>Liste over Gjoremal</td>
+            <td>Gjoremal</td>
+            <td>Legge til alle gjoremalene som trengs a gjores, 
+              og sortere de etter hvilken side det gjelder, og deretter sortere utifra hvilken steg det er</td>
+            <td>0</td>
+          </tr>
+          <tr class="Pabegynt">
+            <td>Generell utseende</td>
+            <td>Alle sider og elementer</td>
+            <td>Finne en fargekombinasjon som er grunnmuren i siden, og bygge ut ifra det og lære meg til a lage ting i alle fall litt fint og oversiktlig</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Sokefelt</td>
+            <td>Forside</td>
+            <td>Lære meg hvordan legge opp sok</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Lage utseende palogging</td>
+            <td>Brukerside og arrangorside</td>
+            <td>Legge opp til at brukere kan logge seg pa</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Lage funksjon palogging</td>
+            <td>Brukerside og arrangorside</td>
+            <td>Gjore det mulig a logge pa og lage bruker</td>
+            <td>3</td>
+          </tr>
+          <tr class="Pabegynt">
+            <td>Utvide Nokkelord</td>
+            <td>Om</td>
+            <td>Utvide liste med nokkelord til a inneholde alt som kan være relevant for a vise hva som kan sorteres pa siden</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Bilder</td>
+            <td>Alle sider</td>
+            <td>Finne bilder som kan brukes til de forskjellige sidene, og finne bilder som kan bruke som "placeholders" for aktiviteter som vises i liste og pa kart</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Database</td>
+            <td>Arrangor, Forside og Brukerside</td>
+            <td>Legge til en database som kan ta i mot informasjon fra arrangorside, lagre informasjonen pa en liste, og printe informasjon til kart og listevisning</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Kartfunksjon</td>
+            <td>Forside</td>
+            <td>Legge til ett kartfunksjon som oppdaterer all informasjonen sokere ser etter, og ikke bare ett stort kart som viser alt</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Listefunksjon</td>
+            <td>Forside</td>
+            <td>Gjore at listefunksjonen kan sorteres nar man fortsatt er innpa siden, uten a matte ta sokene pa nytt igjen</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Fikse aktivitetsruter</td>
+            <td>Forside</td>
+            <td>Lage ett bra design for hvordan informasjonen kan vises skikkelig, pa en enkel og ryddig mate</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Lage egen side for info om arrangorer</td>
+            <td>Informasjon/om</td>
+            <td>Legge til egne sider for hver arrangor, som viser mer informasjon om selve arrangoren, og ikke aktiviteten.</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Side for arrangorer funksjoner</td>
+            <td>informasjon/om</td>
+            <td>Legge til at arrangorer kan endre informasjonen der, at tidligere og kommende aktiviteter dukker opp, og andre lignende arrangorer vises</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Side for hobbyer</td>
+            <td>Finn en Hobby</td>
+            <td>Finne og lage en forlenget og detaljert liste over hobbyer</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Kontakte arrangorer</td>
+            <td></td>
+            <td>Kontakte arrangorer for a vise fram siden, og gi de muligheten til a legge inn sine aktiviteter sa det er klar for publisering</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Arrangorer Sosiale medier</td>
+            <td>Arrangorside</td>
+            <td>Gi muligheten for a enkelt dele aktiviteter pa sosiale medier, med a gi de en ferdigskrevet tekst ut ifra informasjonen de har gitt, sammen med bilde som viser relevant informasjon</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Arrangorer egne nettsider</td>
+            <td>Arrangorside</td>
+            <td>Koble denne nettsiden sammen med arrangorer sine nettsider, sann aktiviteter som blir lagt til denne siden, vises pa arrangoren sine egne nettsider som en egen boks.</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Arrangorer egne nettsider 2</td>
+            <td>Arrangorside</td>
+            <td>Koble siden for arrangorer opp til arrangorene sine publiseringsverktoy for egne nettsider. Henter informasjonen som blir oppdatert pa deres nettsider, og legger det til automatisk pa denne nettsiden sin database</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Endre aktiviteter</td>
+            <td>Arrangorside</td>
+            <td>Legge til en oversikt over aktiviteter og gi muligheten til a endre det pa samme mate som man legger inn aktiviteter</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Mobilvennelig</td>
+            <td>Alle</td>
+            <td>Gjore nettsiden mobilvennlig for alle storrelser</td>
+            <td>2</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <section class="footerText">
+      <p>nettside laget av Martin<br>
+      <a href="https://github.com/Aquaday">https://github.com/Aquaday</a>
+      </p>
+      </section>
+    </footer>
+  </body>
+</html>
