@@ -157,8 +157,12 @@ h1 {
 }
 
 .sokHeader {
-    background-color: rgb(172, 248, 172);
     padding: 50px 0px 50px 0px;
+    background-image: url('markus-spiske-WUehAgqO5hE-unsplash.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(214, 214, 214);
+    background-color: rgba(0, 128, 0, 0.3);
 }
 
 .sokText {
@@ -242,5 +246,16 @@ textarea {
 @media (max-width:700px) {
     nav button {
         width: 49%;
+    }
+    .heroSection {
+        flex-direction: column;
+    }
+    .heroImg {
+        width:100%;
+    }
+    .heroText { 
+        width:85%;
+        text-align: center;
+        margin: auto;
     }
 }
