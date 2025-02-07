@@ -85,17 +85,69 @@
               </tr>
               <tr>
                 <td>
-                  <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
-                  <p style="margin: 0px 0px 0px 30px;">Start og slutt dato</p>
-                  <input type="date" id="dato1" name="Start dato">
-                  <input type="date" id="dato2" name="Slutt dato"><br>
-                  <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
-                  <input type="time" id="tidspunkt1" name="Fra tidspunkt">
-                  <input type="time" id="tidspunkt2" name="Til tidspunkt"><br>
+                  <div>
+                    <h2>Enkelt aktiviteter</h2>
+                    <h4>Dag 1</h4>
+                    <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
+                    <p style="margin: 0px 0px 0px 30px;">Start og slutt dato</p>
+                    <input type="date" id="dato1start" name="Start dato">
+                    <input type="date" id="dato1slutt" name="Slutt dato"><br>
+                    <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
+                    <input type="time" id="tidspunkt1start" name="Fra tidspunkt">
+                    <input type="time" id="tidspunkt1slutt" name="Til tidspunkt"><br>
+                  </div>
+                  <div>
+                    <h4>Dag 2</h4>
+                    <label for="dato1" class="formHeader">Dato og Tidspunkt</label><br>
+                    <p style="margin: 0px 0px 0px 30px;">Start og slutt dato</p>
+                    <input type="date" id="dato2start" name="Start dato">
+                    <input type="date" id="dato2slutt" name="Slutt dato"><br>
+                    <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
+                    <input type="time" id="tidspunkt2start" name="Fra tidspunkt">
+                    <input type="time" id="tidspunkt2slutt" name="Til tidspunkt"><br>
+                  </div>
+                  
+                   <button style="margin: 20px;">Legg til flere dager...</button>
                 </td>
                 <td>
                   <p>På enkelt aktiviteter skriver man inn start og slutt dato, hvis det er over flere dager, velger man alle datoene som passer, og kan velge klokkeslett inidivuelt på hver dato. <br>
-                    Med faste aktiviteter, velger man kun ukedager, og tidspunkt på de dagene. </p>
+                    </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2>Faste aktiviteter</h2>
+                    <h4>Gjentar på følgene dager</h4>
+                    <input type="checkbox" id="mandag" name="repeatDays">
+                    <label for="mandag">mandag</label>
+                    <input type="checkbox" id="tirsdag" name="repeatDays">
+                    <label for="tirsdag">tirsdag</label>
+                    <input type="checkbox" id="onsdag" name="repeatDays">
+                    <label for="onsdag">onsdag</label>
+                    <input type="checkbox" id="torsdag" name="repeatDays">
+                    <label for="torsdag">torsdag</label>
+                    <input type="checkbox" id="fredag" name="repeatDays">
+                    <label for="fredag">fredag</label>
+                    <input type="checkbox" id="lordag" name="repeatDays">
+                    <label for="lordag">lørdag</label>
+                    <input type="checkbox" id="sondag" name="repeatDays">
+                    <label for="sondag">søndag</label><br>
+                    <h4>Dato og Tidspunkt</h4>
+                    <p style="margin: 0px;">Startdato</p>
+                    <input type="date" id="datofaststart" name="Start dato">
+                    <p style="margin: 0px 0px 0px 30px;">Start og slutt tidspunkt</p>
+                    <input type="time" id="tidspunktfaststart" name="Fra tidspunkt">
+                    <input type="time" id="tidspunktfastslutt" name="Til tidspunkt"><br>
+                    <h4>Hvor regelmessig er det</h4>
+                    <input type="radio" id="hverUke" name="repeatUke">
+                    <label for="hverUke">Hver uke</label>
+                    <input type="radio" id="hver2Uke" name="repeatUke">
+                    <label for="hver2Uke">Annenhver uke</label>
+                    <input type="radio" id="hver4Uke" name="repeatUke">
+                    <label for="hver4Uke">Hver 4. uke</label>
+                </td>
+                <td>
+                  <p>Med faste aktiviteter, velger man kun ukedager, og tidspunkt på de dagene. </p>
                 </td>
               </tr>
               <tr>
@@ -133,15 +185,6 @@
                 </td>
                 <td>
                   <p>Dette kan være for eksempel til sosiale medier, eller til deres egen nettside</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="bilde" class="formHeader">Bilde for aktiviteten</label><br>
-                  <input type="file" id="bilde" name="Bilde"><br>
-                </td>
-                <td>
-                  <p>Dette kan enten være noe dere velger selv, eller tar ut ifra en av vares standar bilder som ligger på nettsiden.</p>
                 </td>
               </tr>
               <tr>
