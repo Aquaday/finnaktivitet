@@ -38,6 +38,11 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    max-width: 85%;
+    margin: auto;
+}
+
 header {
     position: sticky;
     top: 0px;
@@ -77,11 +82,6 @@ nav button:hover {
     background-color: #8ecae6;
 }
 
-
-.sectionStyle {
-    max-width: 85%;
-    margin: auto;
-}
 
 .buttonText {
     font-size: 125%;
@@ -254,35 +254,34 @@ textarea {
     max-width: 100%;
 }
 
-@media (max-width:800px) {
-    nav button {
-        width: 49%;
-    }
-    .heroSection {
-        flex-direction: column;
-    }
-    .heroImg {
-        width:100%;
-    }
-    .heroText { 
-        width:85%;
-        text-align: center;
-        margin: auto;
-    }
-    .sokText {
-        height:fit-content;
-
-    }
-    label {
-        padding-bottom: 0px;
-    }
-    table {
-        width: 100%;
-    }
-
-    td {
-        min-width: 200px;
-    }
-    
+.sectionHoverSelect {
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
+.sectionHoverSelect .sectionHidden {
+    display:none;
+}
+
+
+.sectionHoverSelect:hover .sectionHidden  {
+    display: block;
+    transform: translateY(-400px);
+    animation-name: dropDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes dropDown {
+    from {
+        opacity: 0.5;
+        display: none;
+    }
+    to {
+        opacity: 1;
+        display: block;
+        transform: translateY(0);
+    }
+}
