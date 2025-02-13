@@ -38,6 +38,11 @@ body {
     box-sizing: border-box;
 }
 
+.section {
+    max-width: 85%;
+    margin: auto;
+}
+
 header {
     position: sticky;
     top: 0px;
@@ -75,12 +80,6 @@ nav button:hover {
 
 .activeNav {
     background-color: #8ecae6;
-}
-
-
-.sectionStyle {
-    max-width: 85%;
-    margin: auto;
 }
 
 .buttonText {
