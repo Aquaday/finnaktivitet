@@ -260,28 +260,28 @@ textarea {
 }
 
 .sectionHoverSelect .sectionHidden {
-    display:none;
+display: none;
 }
 
-
 .sectionHoverSelect:hover .sectionHidden  {
-    display: block;
     transform: translateY(-400px);
     animation-name: dropDown;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @keyframes dropDown {
     from {
         opacity: 0.5;
-        display: none;
     }
     to {
         opacity: 1;
-        display: block;
         transform: translateY(0);
     }
 }

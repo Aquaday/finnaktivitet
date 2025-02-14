@@ -85,10 +85,12 @@
                   style="color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett"><br>
           </div> 
         </section>
-        <section class="sokSection">
-          <h2 style="font-weight: 300; font-size: 150%;">Valgfritt</h2>
-        </section>
-        <section class="sokSection">
+        <section class="sokSection sectionHoverSelect" style="padding-top: 0;">
+          <div style="width: 100%;">
+            <h2 style="font-weight: 200; font-size: 200%;border-top: 2px solid black;padding: 20px;margin-top: 0;">Valgfritt</h2>
+          </div>
+          <div class="sectionHidden">
+            <div class="sokSectionNoBackground">
             <div class="sokText">
               <label for="sokalder" class="formHeader">Alder</label><br><br>
               <input type="text" id="sokalder" name="alder" size="15"><br>
@@ -132,11 +134,13 @@
               <input type="radio" id="sokutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
               <label for="sokutstyr_nei">Nei, trenger ikke utstyr</label>
             </div>
+            <div style="width: 100%; padding-top: 10px;">
+              <a href="#kart"><button type="button" class="sokButton">Vis i kart</button></a>
+              <a href="#infoboks"><button type="button" class="sokButton">Vis i liste</button></a><br><br>
+            </div>
+          </div>
+          </div>
         </section>
-        <section class="sokEnd">
-          <a href="#kart"><button type="button" >Vis i kart</button></a>
-          <a href="#infoboks"><button type="button" >Vis i liste</button></a><br><br>
-      </section>
       <section class="sectionStyle2">
        <div>
           <h1 id="kart">Her kommer resultater</h1>

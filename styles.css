@@ -59,12 +59,21 @@ nav {
 }
 
 button {
-    border-radius: 10px;
     cursor: pointer;
-    border-color: black;
-    background-color: rgb(223, 223, 223);
     width: 150px;
-    padding-top: 2px;
+    padding: 5px;
+    font-size: 125%;
+    box-shadow: 0px 0px 5px #8ecae6;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: #8ecae6;
+    border-style: solid;
+}
+.sokButton:hover {
+    animation-duration: 200ms;
+    animation-name: sokTextAnimation;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 nav button {
@@ -122,8 +131,17 @@ h1 {
     flex-wrap: wrap;
     background-image: url(images/depositphotos_41927143-stock-illustration-sports-icons.jpg); 
     background-size:auto;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.95);
     background-blend-mode: lighten;
+    padding: 50px 0px;
+}
+
+.sokSectionNoBackground {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 0px;
 }
 
 .sokSection input[type="text"] {
@@ -161,17 +179,55 @@ h1 {
     font-size: 125%;
     width: 350px;
     height: 250px;
-    box-shadow: 0px 0px 2px #8ecae6;
+    box-shadow: 0px 0px 10px #8ecae6;
     padding:15px;
     margin: 10px;
     background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+}
+.sokText:hover {
+    animation-duration: 200ms;
+    animation-name: sokTextAnimation;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
-.sokEnd {
-    background-color: rgb(255, 255, 255);
-    padding: 20px 0px 20px 0px;
-    margin-left: auto;
-    margin-right: auto;
+.sectionHoverSelect {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.sectionHoverSelect .sectionHidden {
+    display:none;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.sectionHoverSelect:hover .sectionHidden  {
+    display: block;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateY(-400px);
+    animation-name: dropDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes dropDown {
+    from {
+        opacity: 0.5;
+        display: none;
+    }
+    to {
+        opacity: 1;
+        display: block;
+        transform: translateY(0);
+    }
 }
 
 .sectionStyle1 {
@@ -285,3 +341,11 @@ textarea {
     
 }
 
+@keyframes sokTextAnimation {
+    from {
+        scale:1;
+    }
+    to {
+        scale: 1.02;
+    }
+}
