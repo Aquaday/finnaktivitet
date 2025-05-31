@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/index.html">
+              <button type="button" class="buttonText">Hjem</button>
+            </a>
+          </li>
+          <li>
+            <a href="/om.html">
+              <button type="button" class="buttonText">Om oss</button>
+            </a>
+          </li>
+          <li>
+            <a href="/hobby.html">
+              <button type="button" class="buttonText">Finn hobby</button>
+            </a>
+          </li>
+          <li>
+            <a href="/arrangor.html">
+              <button type="button" class="buttonText">Arrangørside</button>
+            </a>
+          </li>
+          <li>
+            <a href="/bruker.html">
+              <button type="button" class="activeNav buttonText">Brukerside</button>
+            </a>
+          </li>
+          <li>
+            <a href="/gjoremal.html">
+              <button type="button" class="buttonText">Gjøremål</button>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Brukerside</h1>
+        <p>Denne siden skal være for brukerne som besøker siden. Den skal inneholde en pålogging side, som skal gi de muligheten til å lagre favoritt  og aktiviteter, 
+          gi de muligheten til å sende inn foreslag til aktiviteter som enda ikke er på siden, eller på ett seinere tidspunkt, melde seg på aktiviteter som behøver det gjennom nettsiden <br>
+        Brukere kan også forespørre å oppgradere sin bruker til arrangør, som vil da gi de tilgang til arrangørsiden. For at en forspørsel skal bli godkjent, 
+        må organisasjonen eller lederen for arrangøren sende en mail til mailen som er registrert under dette domene, for å kunne godkjenne oppgradering til arrangør.</p>
+      </section>
+      <section>
+        <h1>pålogging / registrer bruker</h1>
+        <form style="text-align: right;width: 50%;">
+          <label for="navn">Navn</label>
+          <input type="text" id="navn"><br>
+          <label for="passord">passord</label>
+          <input type="password" id="passord"><br>
+          <label for="email">Epost</label>
+          <input type="email" id="email"><br>
+          <label for="telefonnummer">telefonnummer</label>
+          <input type="number" id="telefonnummer">
+        </form>
+      </section>
+      <section>
+        <h1>Forslag til aktiviteter</h1>
+        <p>Her kan brukere skrive inn aktiviteter som de har sett, som ikke allerede ligger på nettsiden, for å hjelpe å legge inn. <br>
+          Dette kan være uten navn og epost, hvis man må være logget inn, og heller ha valg om å få mail når aktiviteten er lagt inn.</p>
+        <form>
+          <label for="navn">Navn</label>
+          <input type="text" id="navn"><br>
+          <label for="email">Epost</label>
+          <input type="email" id="email"><br>
+          <label for="forslag">Hvilken aktivitet vet du om som ikke er på siden?</label><br>
+          <textarea type="text" id="forslag"></textarea><br>
+          <label for="nettsideForslag">Link til aktivitet</label><br>
+          <input type="url" id="nettsideForslag">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <section class="footerText">
+      <p>nettside laget av Martin<br>
+      <a href="https://github.com/Aquaday">https://github.com/Aquaday</a>
+      </p>
+      </section>
+    </footer>
+  </body>
+</html>
