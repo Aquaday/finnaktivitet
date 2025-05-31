@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="/index.html">
+            <button type="button" class="activeNav buttonText">Hjem</button>
+          </a>
+        </li>
+        <li>
+          <a href="/om.html">
+            <button type="button" class="buttonText">Om oss</button>
+          </a>
+        </li>
+        <li>
+          <a href="/hobby.html">
+            <button type="button" class="buttonText">Finn hobby</button>
+          </a>
+        </li>
+        <li>
+          <a href="/arrangor.html">
+            <button type="button" class="buttonText">Arrangørside</button>
+          </a>
+        </li>
+        <li>
+          <a href="/bruker.html">
+            <button type="button" class="buttonText">Brukerside</button>
+          </a>
+        </li>
+        <li>
+          <a href="/gjoremal.html">
+            <button type="button" class="buttonText">Gjøremål</button>
+          </a>
+        </li>
+      </ul>
+      <hr>
+    </nav>
+  </header>
+  <body>
+    <main>
+      
+      <section class="sokHeader">
+        <h1>Finn aktiviteten som passer deg</h1>
+      </section>
+      <section class="sokSection" >
+          <div class="sokText">
+            <label for="sokenkel" class="formHeader">Hvilken aktivitet</label><br>
+            <br><input type="radio" id="sokenkel" name="aktivitet" value="Enkel aktivitet">
+            <label for="sokenkel"><span style="font-weight: 450;">Enkel aktivitet</span><br>noe som skjer kun en dag eller over en liten periode</label><br><br>
+            <input type="radio" id="sokfast" name="aktivitet" value="Fast aktivitet">
+            <label for="sokfast"><span style="font-weight: 450;">Fast aktivitet</span><br>en aktivitet som skjer regelmessig hver uke</label><br><br>
+          </div>
+          <div class="sokText">
+            <label for="sokdato1" class="formHeader">Start og slutt</label> <br><br>
+            <input type="date" id="sokdato1" name="Start dato">
+            <input type="date" id="sokdato2" name="Slutt dato"><br>
+            <label for="soktidspunkt1">I tidspunktet mellom</label><br>
+            <input type="time" id="soktidspunkt1" name="Fra tidspunkt"> og
+            <input type="time" id="soktidspunkt2" name="Til tidspunkt"><br>
+          </div>
+          <div class="sokText">
+            <label class="formHeader">Fjern resultater der man må:</label><br><br>
+            <input type="checkbox" id="sokpamelding" name="pamelding" value="Pamelding">
+            <label for="sokpamelding">Melde seg på</label><br>
+            <input type="checkbox" id="sokmedlemskap" name="medlemskap" value="Medlemskap">
+            <label for="sokmedlemskap">Registrere medlemskap</label><br>
+            <input type="checkbox" id="sokforhand" name="forhand" value="Forhand">
+            <label for="sokforhand">Forhåndsbetale billetter eller lignende</label><br><br>
+          </div>
+          <div class="sokText">
+            <label for="soknokkelord" class="formHeader">Nøkkelord</label><br><br>
+            <label for="soknokkelord">For eksempel en type idrett, en organisasjon eller sted</label>
+            <input type="text" id="soknokkelord" name="soknokkelord" 
+                  style="color:rgb(100, 200, 100);" value="Bergen, Trening, Idrett"><br>
+          </div> 
+        </section>
+        <section class="sokSection sectionHoverSelect" style="padding-top: 0;margin-top: 0px;">
+          <div style="width: 100%;">
+            <h2 style="font-weight: 200; font-size: 200%;border-top: 2px solid black;padding: 20px;margin-top: 0;">Valgfritt</h2>
+          </div>
+          <div class="sectionHidden">
+            <div class="sokSectionNoBackground">
+            <div class="sokText">
+              <label for="sokalder" class="formHeader">Alder</label><br><br>
+              <input type="text" id="sokalder" name="alder" size="15"><br>
+              <input type="checkbox" id="sokaltalder" name="alder" value="Alle alder">
+              <label for="sokaltalder">Vis alt</label><br>
+            </div>
+            <div class="sokText">
+              <label for="soklav" class="formHeader">Hvor fysisk krevende er det?</label><br><br>
+              <input type="radio" id="sokalt" name="aktivitetsniva" value="Alle aktivitetesniva">
+              <label for="sokalt">Vis alt</label><br>
+              <input type="radio" id="soklav" name="aktivitetsniva" value="Lav aktivitetesniva">
+              <label for="soklav">Passer for Alle</label><br>
+              <input type="radio" id="sokmiddels" name="aktivitetsniva" value="Middels aktivitetesniva">
+              <label for="sokmiddels">Lettere fysisk kverende</label><br>
+              <input type="radio" id="sokhoy" name="aktivitetsniva" value="Hoy aktivitetesniva">
+              <label for="sokhoy">Veldig fysisk krevende</label><br><br>
+            </div>  
+            <div class="sokText">
+              <label for="sokgratis" class="formHeader">Hva er prisen?</label><br><br>
+              <input type="radio" id="sokvisalt" name="prisklasse" value="Vis alt">
+              <label for="sokvisalt">Vis alt</label><br>
+              <input type="radio" id="sokgratis" name="prisklasse" value="Gratis">
+              <label for="sokgratis">Gratis</label><br>
+              <input type="radio" id="sokunder200" name="prisklasse" value="Under 200kr">
+              <label for="sokunder200">Under 200kr</label><br>
+              <input type="radio" id="sokunder500" name="prisklasse" value="Under 500kr">
+              <label for="sokunder500">Under 500kr</label><br>
+              <input type="radio" id="sokunder1000" name="prisklasse" value="Under 1000kr">
+              <label for="sokunder1000">Under 1000kr</label><br>    
+              <input type="radio" id="sokover1000" name="prisklasse" value="Over 1000kr">
+              <label for="sokover1000">Over 1000kr</label><br>  <br>
+            </div>
+            <div class="sokText">
+              <label for="sokutstyr_ja" class="formHeader">Behov for aktivitets-relatert utstyr?</label><br><br>
+              <input type="radio" id="sokutstyr_alt" name="utstyr" value="Vis alt">
+              <label for="sokutstyr_alt">Vis alt</label><br>
+              <input type="radio" id="sokutstyr_ja" name="utstyr" value="Trenger utstyr">
+              <label for="sokutstyr_ja">Ja</label><br>
+              <input type="radio" id="sokutstyr_lan" name="utstyr" value="Kan lane utstyr">
+              <label for="sokutstyr_lan">Ja, men kan lanes</label><br>
+              <input type="radio" id="sokutstyr_nei" name="utstyr" value="Trenger ikke utstyr">
+              <label for="sokutstyr_nei">Nei, trenger ikke utstyr</label>
+            </div>
+            <div style="width: 100%; padding-top: 10px;">
+              <a href="#kart"><button type="button" class="sokButton">Vis i kart</button></a>
+              <a href="#infoboks"><button type="button" class="sokButton">Vis i liste</button></a><br><br>
+            </div>
+          </div>
+          </div>
+        </section>
+      <section class="sectionStyle2">
+       <div>
+          <h1 id="kart">Her kommer resultater</h1>
+          <iframe style="max-width:90%;" src="https://www.google.com/maps/d/embed?mid=1iUcA2ocwf6b4KjrvtplW3rbrRHDIN6Q&ehbc=2E312F&noprof=1" width="840" height="480" ></iframe>
+          <iframe style="max-width:90%;" src="https://www.google.com/maps/d/embed?mid=10CMXE81Tgcg9sPk274dEUX9K1FFlTqs&ehbc=2E312F&noprof=1" width="840" height="480"></iframe>
+        </div>
+      </section>
+      <!-- Eksempel over ting -->
+      <section>
+        <h1 id="infoboks">Infoboks om aktivitetene fra resultatene</h1>
+      </section>
+      <section>
+        <div class="tableDiv">
+          <table>
+            <tr>
+              <th>info</th>
+              <th>Detaljer</th>
+            </tr>
+            <tr>
+              <td>
+                <h2 id="FontenehusetTurgruppe">Fontenehuset Turgruppe</h2>
+                <h6>Arrangeres av <a href="/om.html">Fontenehuset Bergen</a><br>Skutevikensboder 11, 5035 Bergen</h6>
+                <h5>Hver torsdag kl 09:00-15:00</h5>
+                <a href="https://www.fontenehusetbergen.no"> www.fontenehusetbergen.com</a>
+                <h5>nøkkelord: <ins>Turgruppe</ins> - <ins>Fontenehuset</ins> - <ins>Bergen</ins> - <ins>PsykiskHelse</ins></h5>
+              </td>
+              <td>
+                <h5>Velkommen til turgruppe hver torsdag hos fontenehuset!<br> Alle som har meldt seg inn kan delta, og det er ikke behov for å ta med seg noe mer enn gode klær og sko. <br>Resten av utstyret kan du lane hos oss :) <br><br>
+                  Innmelding er gratis, og du kan lese mer om vart tilbud her: <ins>www.fontenehusetbergen.com/bli-medlem/</ins></h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Flere resultater
+              </td>
+              <td>
+                mer informasjon
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section style="padding: 20px;">
+        <a href="#heroSection"><button type="button" style="padding:20px">Til toppen</button></a>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <section class="footerText">
+      <p>nettside laget av Martin<br>
+      <a href="https://github.com/Aquaday">https://github.com/Aquaday</a>
+      </p>
+      </section>
+    </footer>
+    <form id="signupForm">
+      
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <form id="loginForm">
+      
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    
+    <script>
+      document.getElementById("signupForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+    
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            alert("Account created!");
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      });
+      document.getElementById("loginForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+    
+        firebase.auth().signInWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            alert("Welcome back!");
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      });
+    </script>
+  </body>
+</html>
